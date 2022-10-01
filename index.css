@@ -4,38 +4,38 @@
 
 
 /* Import a font */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 
 /* Set the background color for my page: */
 body{
-    background-color: rgb(233, 233, 233);
+    background-color: rgba(112, 134, 158, 255);
  
 }
 
 
 /* Choose the appearance of the tags, h1, h3 and p: */
 h1, h3, p{
-    color:rgb(17, 17, 17);
-    font-family: 'Roboto', sans-serif;
+    color:rgb(255, 255, 255);
+    font-family: 'Open Sans', sans-serif;
     text-align: center;
 }
     
 .myWeek1{
     margin: auto;
     max-width: 600px;
-    background-color: bisque;
+    background-color: rgba(112,134,158,255);
 }
 
 
 /* Set the apperance of the class, chart */
 .chart{
-    background-color: orange;
-    width:330px;
-    border-width: 10px;
+    background-color: white;
+    width:440px;
+    border-width: 8px;
     border-style: solid;
-    border-radius: 5px;
-    border-color: red;
+    border-radius: 4px;
+    border-color: rgb(19, 13, 79);
 
     
 }
