@@ -34,18 +34,26 @@
         <h3>Productivity puzzle</h3>
         <p>My second chart looks at FDI.</p>
         <div class="chart" id="Chart2"> </div>
+
+        <h3>IMF lending</h3>
+        <p>The third chart tracks IMF lending.</p>
+        <div class="chart" id="Chart3"></div>
     </div> 
 </body>
+
+
 
 
 <script>
     //Define charts:
     var myChart1 = "trade.json";
     var myChart2 = "chart_trade2_PB_FDI.json";
+    var myChart3 = "imflending.json";
 
     // Embed charts:
     vegaEmbed('#Chart1', myChart1);
     vegaEmbed('#Chart2', myChart2);
+    vegaEmbed('#Chart3', myChart3);
 </script>
 
 </html>
