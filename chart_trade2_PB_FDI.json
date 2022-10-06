@@ -19,7 +19,7 @@
     "transform": [
        {"calculate": "datum.value/1000", "as":"billions"}],
   
-    "mark":{"type": "line","color":"#00BFFF","strokeWidth":2},
+    "mark":{"type": "line","color":"#002FA7","strokeWidth":2},
   
     "encoding": {
           "x": {
