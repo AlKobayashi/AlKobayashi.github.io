@@ -9,18 +9,44 @@
 
 /* Set the background color for my page: */
 body{
-    background-color: rgba(112, 134, 158, 255);
+    background-color: rgba(112,134,158,255);
  
 }
 
 
 /* Choose the appearance of the tags, h1, h3 and p: */
-h1, h3, p{
+/*h1, h3, p{
+    color:rgb(255, 255, 255);
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+} */
+
+h1{
+    color:rgb(255, 255, 255);
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-size: xx-large;
+}
+    
+h2{
     color:rgb(255, 255, 255);
     font-family: 'Open Sans', sans-serif;
     text-align: center;
 }
-    
+
+h3{
+    color:rgb(255, 255, 255);
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+p{
+    color:rgb(255, 255, 255);
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+
 .myWeek1{
     margin: auto;
     max-width: 600px;
@@ -39,4 +65,3 @@ h1, h3, p{
 
     
 }
-    
