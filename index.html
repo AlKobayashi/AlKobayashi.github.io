@@ -30,21 +30,28 @@
         <h2>Week 1</h2>
 
         <h3>Trade</h3>
-        <p>The first chart tracks trade between the UK and France.</p>
         <div class="chart" id="Chart1"></div>
+        <p>The first chart tracks trade between the UK and France.</p>
+    
 
         <h3>Foreign Direct Investment</h3>
-        <p>My second chart looks at FDI.</p>
         <div class="chart" id="Chart2"> </div>
+        <p>My second chart looks at FDI.</p>
+    
 
         <h2>Week 2</h2>
 
-        <h3>IMF lending</h3>
-        <p>The third chart tracks IMF lending.</p>
+        <h3>IMF lending - in absolute terms</h3>
         <div class="chart" id="Chart3"></div>
+        <p>The third chart tracks IMF lending in absolute terms. The most risky year would likely be one of the years with the highest lending-to-GDP ratio.</p>
+        
+        <h3>IMF lending - relative to GDP</h3>
+        <div class="chart" id="Chart4"></div>
+        <p>The year 1984 appears to be the riskiest year as it has the highest ratio of lending to world GDP, at nearly 0.041%.</p>
+
+
     </div> 
 </body>
-
 
 
 
@@ -55,11 +62,13 @@
     var myChart1 = "trade.json";
     var myChart2 = "chart_trade2_PB_FDI.json";
     var myChart3 = "imflending.json";
+    var myChart4 = "imflendingGDP.json"
 
     // Embed charts:
     vegaEmbed('#Chart1', myChart1);
     vegaEmbed('#Chart2', myChart2);
     vegaEmbed('#Chart3', myChart3);
+    vegaEmbed('#Chart4', myChart4);
 </script>
 
 </html>
