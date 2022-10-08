@@ -22,7 +22,7 @@ body{
 } */
 
 h1{
-    color:rgb(255, 255, 255);
+    color:rgb(158, 194, 252);
     font-family: 'Open Sans', sans-serif;
     text-align: center;
     font-size: xx-large;
@@ -43,7 +43,7 @@ h3{
 p{
     color:rgb(255, 255, 255);
     font-family: 'Open Sans', sans-serif;
-    text-align: center;
+    text-align: left;
 }
 
 .myWeek1{
@@ -57,10 +57,10 @@ p{
 .chart{
     background-color: white;
     width:440px;
-    border-width: 6px;
+    border-width: 3px;
     border-style: solid;
-    border-radius: 4px;
-    border-color: rgb(19, 13, 79);
+    border-radius: 3px;
+    border-color: rgb(158, 194, 252);
 
     
 }
