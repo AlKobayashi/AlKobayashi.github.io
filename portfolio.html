@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title for the page -->
+    <title>Document</title>
+
+    <!-- Link to my style sheet -->
+    <link rel="stylesheet" href="index.css">
+
+    <!--The next three lines allow the Vega embed-->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+</head>
+
+
+
+<body>
+    <!-- A div that contains a group of items for week 1. Can be useful for setting background colours etc.  -->
+    <div class="myWeek1">
+        <h1>Data Science</h1>
+
+        <!--Biten under är extra, -->
+        <a href="index.html">Home</a>
+        <a href="project.html">Data Science Project</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="CV.html">CV</a>
+
+
+        <!--Biten ovan är extra-->
+        <h2>Week 1</h2>
+
+        <h3>Trade</h3>
+        <div class="chart" id="Chart1"></div>
+        <p>The first chart tracks trade between the UK and France.</p>
+    
+
+        <h3>Foreign Direct Investment</h3>
+        <div class="chart" id="Chart2"> </div>
+        <p>My second chart looks at FDI.</p>
+    
+
+        <h2>Week 2</h2>
+
+        <h3>IMF lending - in absolute terms</h3>
+        <div class="chart" id="Chart3"></div>
+        <p>The third chart tracks IMF lending in absolute terms. The most risky year would likely be one of the years with the highest lending-to-GDP ratio.</p>
+        
+        <h3>IMF lending - relative to GDP</h3>
+        <div class="chart" id="Chart4"></div>
+        <p>The year 1984 appears to be the riskiest year as it has the highest ratio of lending to world GDP, at nearly 0.041%.</p>
+
+
+        <h2>Week 3</h2>
+        <h3>GDP per capita growth (annual %)</h3>
+        <div class="chart" id="Chart5"></div>
+
+        <h3>GDP per capita growth (annual %) in an improved chart</h3>
+        <div class="chart" id="Chart6"></div>
+        <p>I changed the visual encoding from stacked bar chart to line chart since line charts convey trends more effectively. I also removed the gridlines for simplicity. </p>
+
+
+        <h2>Week 4</h2> 
+
+
+        <h2>Week 5</h2>
+
+
+        <h2>Week 7</h2>
+       
+        <h3>Map 1: Base map</h3>
+        <div class="chart" id="Chart18"></div>
+
+        <h3>Map 2: Chloropleth map</h3>
+        <div class="chart" id="Chart19"></div>
+
+        <p>This map shows the average life expectancy for women in respective European countries. The map indicates that women in Spain have the longest average life expectancy of 86.7 years.</p>
+
+
+
+    </div> 
+</body>
+
+
+
+//<script>
+    //Define charts:
+    var myChart1 = "trade.json";
+    var myChart2 = "chart_trade2_PB_FDI.json";
+    var myChart3 = "imflending.json";
+    var myChart4 = "imflendingGDP.json";
+    var myChart5 = "wk3.badchart.json"
+    var myChart6 = "wk3.improvedchart.json"
+    var myChart18 = "wk7.blankeuropemap.json"
+    var myChart19 = "wk7.map2lifewomen.json"
+
+    // Embed charts:
+    vegaEmbed('#Chart1', myChart1);
+    vegaEmbed('#Chart2', myChart2);
+    vegaEmbed('#Chart3', myChart3);
+    vegaEmbed('#Chart4', myChart4);
+    vegaEmbed('#Chart5', myChart5);
+    vegaEmbed('#Chart6', myChart6);
+    vegaEmbed('#Chart18', myChart18);
+    vegaEmbed('#Chart19', myChart19);
+</script>
+
+</html>
+
+
