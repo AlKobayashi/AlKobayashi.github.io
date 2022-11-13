@@ -27,59 +27,27 @@
     <div class="myWeek1">
         <h1>Data Science</h1>
 
-        <h2>Week 1</h2>
+        <!--Biten under är extra, -->
+        <a href="index.html">Home</a>
+        <a href="project.html">Data Science Project</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="CV.html">CV</a>
 
-        <h3>Trade</h3>
-        <div class="chart" id="Chart1"></div>
-        <p>The first chart tracks trade between the UK and France.</p>
-    
 
-        <h3>Foreign Direct Investment</h3>
-        <div class="chart" id="Chart2"> </div>
-        <p>My second chart looks at FDI.</p>
-    
+        <!--Biten ovan är extra-->
 
-        <h2>Week 2</h2>
+        <p>Welcome to my Data Science website!</p>
+  
 
-        <h3>IMF lending - in absolute terms</h3>
-        <div class="chart" id="Chart3"></div>
-        <p>The third chart tracks IMF lending in absolute terms. The most risky year would likely be one of the years with the highest lending-to-GDP ratio.</p>
+
         
-        <h3>IMF lending - relative to GDP</h3>
-        <div class="chart" id="Chart4"></div>
-        <p>The year 1984 appears to be the riskiest year as it has the highest ratio of lending to world GDP, at nearly 0.041%.</p>
-
-
-        <h2>Week 3</h2>
-        <h3>GDP per capita growth (annual %)</h3>
-        <div class="chart" id="Chart5"></div>
-
-        <h3>GDP per capita growth (annual %) in an improved chart</h3>
-        <div class="chart" id="Chart6"></div>
-        <p>I changed the visual encoding from stacked bar chart to line chart since line charts convey trends more effectively. I also removed the gridlines for simplicity. </p>
-
-
     </div> 
 </body>
 
 
 
 <script>
-    //Define charts:
-    var myChart1 = "trade.json";
-    var myChart2 = "chart_trade2_PB_FDI.json";
-    var myChart3 = "imflending.json";
-    var myChart4 = "imflendingGDP.json";
-    var myChart5 = "wk3.badchart.json"
-    var myChart6 = "wk3.improvedchart.json"
 
-    // Embed charts:
-    vegaEmbed('#Chart1', myChart1);
-    vegaEmbed('#Chart2', myChart2);
-    vegaEmbed('#Chart3', myChart3);
-    vegaEmbed('#Chart4', myChart4);
-    vegaEmbed('#Chart5', myChart5);
-    vegaEmbed('#Chart6', myChart6);
 </script>
 
 </html>
