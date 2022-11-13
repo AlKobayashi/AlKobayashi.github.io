@@ -40,7 +40,7 @@
     "encoding": {
       "color": {
         "field": "Life_Expectancy",
-        "title": "Rating (%)",
+        "title": "Years",
         "type": "quantitative",
         "scale": {"scheme": "cividis"}
       },
@@ -49,7 +49,7 @@
         {
           "field": "Life_Expectancy",
           "type": "quantitative",
-          "title": "Rating (%)",
+          "title": "Average life expectancy",
           "format": ".2f"
         }
       ]
