@@ -37,14 +37,38 @@
         <a href="index.html">Home</a>
         <a href="project.html">Project</a>
         <a href="portfolio.html">Portfolio</a>
-        <a href="CV.html">About me</a>
+        <a href="CV.html">About</a>
 
 
         <!--Biten ovan är extra-->
+        <h3>Are low-cost carriers (LCCs) taking over the European airline market?</h3> 
+        <p>Talk about aims (200 words max).</p>
 
-        <p>Data Science Project</p>
-        <p>Are low-cost carriers taking over the European airline market?</p>
+        <h3>Passengers carried over time</h3> 
+        <div class="chart" id="Chart7"></div>
+        <p>[FÖRBÄTTRA] Data was scraped from Wikipedia using Colab, where the data was also cleaned. At the end, the cleaned data was converted to a csv file to rebase the numbers at an index of 100 in 2006 to make the trajectories more easily comparable. Airlines colored in blue signify low-cost carriers, whereas the remaining gray ones are national flag carriers.</p>
+        <p><p class="rubric-launch">Link to Colab code, <a class="textLink" href="https://colab.research.google.com/drive/14uwYWrbvX-PwILxvBD9lRKkEIwK7-I7I#scrollTo=c4LyLEWk17lE"> here</a>.</p></p>
   
+        
+        <h3>Title</h3>
+        <div class="chart" id="Chart200"></div>
+        <p>Add comment here.</p>
+        <p><p class="rubric-launch">Link to Colab code, <a class="textLink" href="https://alkobayashi.github.io/project.html"> here</a>.</p></p>
+
+        
+        <h3>Airline Bailouts and Passenger Count</h3>
+        <div class="chart" id="Chart22"></div>
+        <p>This scatter graph plots the number of passengers carried by airline or airline group in 2019, before COVID-19 and the bailouts issued, as of April 2021, in response to the pandemic.</p>
+        <div class="chart" id="Chart23"></div>
+        <p>Add comments here.</p>
+
+        <h3>Title</h3>
+        <div class="chart" id="Chart2400"></div>
+        <p>Add comments here.</p>
+
+        <h3>Title</h3>
+        <div class="chart" id="Chart2500"></div>
+        <p>[CLUSTERING WK 10] Add comments here.</p>
 
     </div> 
 </body>
@@ -52,7 +76,53 @@
 
 
 <script>
+    //Define charts:
+    var myChart1 = "trade.json";
+    var myChart2 = "chart_trade2_PB_FDI.json";
+    var myChart3 = "imflending.json";
+    var myChart4 = "imflendingGDP.json";
+    var myChart5 = "wk3.badchart.json"
+    var myChart6 = "wk3.improvedchart.json"
+    var myChart7 = "wk4.passengerGraph.json"
+    var myChart8 = "wk5.P2WU.json"
+    var myChart9 = "wk5.P3NC.json"
+    var myChart10 = "wk5.P46J.json"
+    var myChart11 = "wk5.P32B.json"
+    var myChart12 = "wk5.P327.json"
+    var myChart13 = "wk5.P4BX.json"
+    var myChart14 = "wk5.P3LA.json"
+    var myChart15 = "wk5.P496.json"
+    var myChart16 = "wk5.P5J8.json"
+    var myChart17 = "wk5.P2WU.json"
+    var myChart18 = "wk7.blankeuropemap.json"
+    var myChart19 = "wk7.map2lifewomen.json"
+    var myChart20 = "wk8.chart1.json"
+    var myChart21 = "wk8.graph2.json"
+    var myChart22 = "wk9.chart1.json"
 
+    // Embed charts:
+    vegaEmbed('#Chart1', myChart1);
+    vegaEmbed('#Chart2', myChart2);
+    vegaEmbed('#Chart3', myChart3);
+    vegaEmbed('#Chart4', myChart4);
+    vegaEmbed('#Chart5', myChart5);
+    vegaEmbed('#Chart6', myChart6);
+    vegaEmbed('#Chart7', myChart7); //wk4
+    vegaEmbed('#Chart8', myChart8); //wk5
+    vegaEmbed('#Chart9', myChart9);
+    vegaEmbed('#Chart10', myChart10);
+    vegaEmbed('#Chart11', myChart11);
+    vegaEmbed('#Chart12', myChart12);
+    vegaEmbed('#Chart13', myChart12);
+    vegaEmbed('#Chart14', myChart12);
+    vegaEmbed('#Chart15', myChart12);
+    vegaEmbed('#Chart16', myChart12); //wk5
+    vegaEmbed('#Chart17', myChart17);
+    vegaEmbed('#Chart18', myChart18);
+    vegaEmbed('#Chart19', myChart19); 
+    vegaEmbed('#Chart20', myChart20);
+    vegaEmbed('#Chart21', myChart21);
+    vegaEmbed('#Chart22', myChart22); //wk9
 </script>
 
 </html>
