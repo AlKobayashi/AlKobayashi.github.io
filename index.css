@@ -10,7 +10,7 @@
 /* Set the background color for my page: */
 body{
     background-color: rgba(112,134,158,255);
-    background-image: url(https://github.com/AlKobayashi/AlKobayashi.github.io/blob/main/Favicon-AK2.png); /* DET ÄR MLÖJLIGT ATT TA BORT DENNA RAD OCH DE FÖLJANDE FÖR ATT ÅTERSTÄLLA BLÅ BAKGRUND*/
+    background-image: url(IMG_2210.blurred.png); /* DET ÄR MLÖJLIGT ATT TA BORT DENNA RAD OCH DE FÖLJANDE FÖR ATT ÅTERSTÄLLA BLÅ BAKGRUND*/
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
