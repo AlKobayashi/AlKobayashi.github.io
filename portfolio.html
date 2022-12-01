@@ -8,6 +8,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+<!--Favicon-->
+<link rel="icon" href="Favicon-AK2.png">
+<link rel="shortcut icon" href="Favicon-AK2.png" />
+<link rel="apple-touch-icon" href="Favicon-AK2.png" />
+
+
     <!-- Title for the page -->
     <title>Document</title>
 
@@ -29,9 +35,9 @@
 
         <!--Biten under är extra, -->
         <a href="index.html">Home</a>
-        <a href="project.html">Data Science Project</a>
+        <a href="project.html">Project</a>
         <a href="portfolio.html">Portfolio</a>
-        <a href="CV.html">CV</a>
+        <a href="CV.html">About me</a>
 
 
         <!--Biten ovan är extra-->
@@ -68,9 +74,33 @@
 
 
         <h2>Week 4</h2> 
+        <h3>Scraped data</h3>
+        <div class="chart" id="Chart7"></div>
+        <p>Data was scraped from Wikipedia using Colab, where the data was also cleaned. At the end, the cleaned data was converted to a csv file to rebase the numbers at an index of 100 in 2006 to make the trajectories more easily comparable. Airlines colored in blue signify low-cost carriers, whereas the remaining gray ones are national flag carriers.</p>
+        <p><p class="rubric-launch">Link to Colab code, <a class="textLink" href="https://colab.research.google.com/drive/14uwYWrbvX-PwILxvBD9lRKkEIwK7-I7I#scrollTo=c4LyLEWk17lE"> here</a>.</p></p>
 
-
+        
         <h2>Week 5</h2>
+        <h3>UK trade in goods by classification of product by activity time series (MQ10) between 1997 and 2022.</h3>
+        <p><p class="rubric-launch">Link to Colab code, <a class="textLink" href="https://colab.research.google.com/drive/1Uwpq94LDuUm_-8APfCWukUqatQeTW07W#scrollTo=pMRAEV4F1cAs"> here</a>.</p></p>
+       
+        <table>
+            <tr>
+              <td><div class="chart" id="Chart8"></div></td>
+              <td><div class="chart" id="Chart9"></div></td> 
+              <td><div class="chart" id="Chart10"></div></td>
+            </tr>
+            <tr>
+              <td><div class="chart" id="Chart11"></div></td>
+              <td><div class="chart" id="Chart12"></div></td> 
+              <td><div class="chart" id="Chart13"></div></td>
+            </tr>
+            <tr>
+              <td><div class="chart" id="Chart14"></div></td>
+              <td><div class="chart" id="Chart15"></div></td> 
+              <td><div class="chart" id="Chart16"></div></td>
+            </tr>
+          </table>        
 
 
         <h2>Week 7</h2>
@@ -82,15 +112,41 @@
         <div class="chart" id="Chart19"></div>
 
         <p>This map shows the average life expectancy for women in respective European countries. The map indicates that women in Spain have the longest average life expectancy of 86.7 years.</p>
+        
+        <h2>Week 8</h2>
+       
+        <h3>Graph 1: Prices and Wages Lecture</h3>
+        <div class="chart" id="Chart20"></div>
+        <p>This graph shows the share of income spent on food and other categories by decile group. One of the arguments made in the Prices and Wages lecture was that low-income people have a lower ability to adjust to rising price levels and that lower-income households spend a greater share of their income on food compared to higher-income households. This graph supports that claim.</p>
+        <p><p class="rubric-launch">Link to Colab code, <a class="textLink" href="https://colab.research.google.com/drive/1JJm60jOMTlqsxT2h34_SUbzO77c52xdA#scrollTo=f1CwyY0Zdazv"> here</a>.</p></p>
 
 
+        <h3>Graph 2: Prices and Wages Lecture</h3>
+        <div class="chart" id="Chart21"></div>
+        <p>This line chart shows the food inflation (%) in the UK between 1990 and 2022. The argument was that food prices are rising and this chart supports that.</p>
+
+
+        <h2>Week 9</h2>
+        <h3>Graph 1: Airline Bailouts (2021) and Passenger Count (2019)</h3>
+        <div class="chart" id="Chart22"></div>
+        <p>This scatter graph plots the number of passengers carried by airline or airline group in 2019, before COVID-19 and the bailouts issued, as of April 2021, in response to the pandemic.</p>
+        <div class="chart" id="Chart23"></div>
+        <p>Add comments here.</p>
+
+        <h2>Week 10</h2>
+        <div class="chart" id="Chart24"></div>
+        <p>Add comments here.</p>
+
+        <h2>Week 11</h2>
+        <div class="chart" id="Chart25"></div>
+        <p>Add comments here.</p>
 
     </div> 
 </body>
 
 
 
-//<script>
+<script>
     //Define charts:
     var myChart1 = "trade.json";
     var myChart2 = "chart_trade2_PB_FDI.json";
@@ -98,8 +154,22 @@
     var myChart4 = "imflendingGDP.json";
     var myChart5 = "wk3.badchart.json"
     var myChart6 = "wk3.improvedchart.json"
+    var myChart7 = "wk4.passengerGraph.json"
+    var myChart8 = "wk5.P2WU.json"
+    var myChart9 = "wk5.P3NC.json"
+    var myChart10 = "wk5.P46J.json"
+    var myChart11 = "wk5.P32B.json"
+    var myChart12 = "wk5.P327.json"
+    var myChart13 = "wk5.P4BX.json"
+    var myChart14 = "wk5.P3LA.json"
+    var myChart15 = "wk5.P496.json"
+    var myChart16 = "wk5.P5J8.json"
+    var myChart17 = "wk5.P2WU.json"
     var myChart18 = "wk7.blankeuropemap.json"
     var myChart19 = "wk7.map2lifewomen.json"
+    var myChart20 = "wk8.chart1.json"
+    var myChart21 = "wk8.graph2.json"
+    var myChart22 = "wk9.chart1.json"
 
     // Embed charts:
     vegaEmbed('#Chart1', myChart1);
@@ -108,10 +178,23 @@
     vegaEmbed('#Chart4', myChart4);
     vegaEmbed('#Chart5', myChart5);
     vegaEmbed('#Chart6', myChart6);
+    vegaEmbed('#Chart7', myChart7); //wk4
+    vegaEmbed('#Chart8', myChart8); //wk5
+    vegaEmbed('#Chart9', myChart9);
+    vegaEmbed('#Chart10', myChart10);
+    vegaEmbed('#Chart11', myChart11);
+    vegaEmbed('#Chart12', myChart12);
+    vegaEmbed('#Chart13', myChart12);
+    vegaEmbed('#Chart14', myChart12);
+    vegaEmbed('#Chart15', myChart12);
+    vegaEmbed('#Chart16', myChart12); //wk5
+    vegaEmbed('#Chart17', myChart17);
     vegaEmbed('#Chart18', myChart18);
-    vegaEmbed('#Chart19', myChart19);
+    vegaEmbed('#Chart19', myChart19); 
+    vegaEmbed('#Chart20', myChart20);
+    vegaEmbed('#Chart21', myChart21);
+    vegaEmbed('#Chart22', myChart22); //wk9
 </script>
 
 </html>
-
 
