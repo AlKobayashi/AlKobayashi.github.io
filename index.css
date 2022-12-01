@@ -10,6 +10,12 @@
 /* Set the background color for my page: */
 body{
     background-color: rgba(112,134,158,255);
+    background-image: url(IMG_2210.blurred.png); /* DET ÄR MLÖJLIGT ATT TA BORT DENNA RAD OCH DE FÖLJANDE FÖR ATT ÅTERSTÄLLA BLÅ BAKGRUND*/
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 80px;
+    display: flex;
  
 }
 
@@ -49,8 +55,15 @@ p{
 .myWeek1{
     margin: auto;
     max-width: 600px;
-    background-color: rgba(112,134,158,255);
+    
 }
+
+.myWeek5{
+    margin: auto;
+    max-width: 200px;
+    
+}
+
 
 /* Set the apperance of the class, chart */
 .chart{
@@ -63,4 +76,4 @@ p{
 
     
 }
-    
+
