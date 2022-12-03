@@ -10,7 +10,7 @@
 /* Set the background color for my page: */
 body{
     background-color: rgba(112,134,158,255);
-    background-image: url(IMG_2210.blurred.png); /* DET ÄR MLÖJLIGT ATT TA BORT DENNA RAD OCH DE FÖLJANDE FÖR ATT ÅTERSTÄLLA BLÅ BAKGRUND*/
+    background-image: url(hembild.png); /* DET ÄR MLÖJLIGT ATT TA BORT DENNA RAD; hembild.png; sasvinge.blur2.png; hembild.edited2.png; sasvinge.png; IMG_2210.blurred.png*/
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -36,7 +36,7 @@ body{
     font-family: 'Open Sans', sans-serif;
     border: none;
     color: white;
-    padding: 13px 40px;
+    padding: 11px 40px;
     text-align: center;
     font-size: 16px;
     margin: 4px 2px;
@@ -53,7 +53,7 @@ body{
     font-family: 'Open Sans', sans-serif;
     border: none;
     color: white;
-    padding: 13px 40px;
+    padding: 11px 40px;
     text-align: center;
     font-size: 16px;
     margin: 4px 2px;
@@ -69,7 +69,7 @@ body{
     font-family: 'Open Sans', sans-serif;
     border: none;
     color: white;
-    padding: 13px 40px;
+    padding: 11px 40px;
     text-align: center;
     font-size: 16px;
     margin: 4px 2px;
@@ -81,11 +81,11 @@ body{
 }
 
 #link4about{
-    background-color: rgb(118, 118, 163);
+    background-color: rgb(87, 88, 120);
     font-family: 'Open Sans', sans-serif;
     border: none;
     color: white;
-    padding: 13px 40px; /*suggested: 15px 30px*/
+    padding: 11px 40px; /*suggested: 15px 30px*/
     text-align: center;
     font-size: 16px;
     margin: 4px 2px;
@@ -158,3 +158,4 @@ p{
 
     
 }
+
