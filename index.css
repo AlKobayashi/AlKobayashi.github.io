@@ -96,6 +96,11 @@ body{
     cursor: pointer;
 }
 
+#link1home:hover {opacity: 0.9} 
+#link2project:hover {opacity: 0.9} 
+#link3portfolio:hover {opacity: 0.9} 
+#link4about:hover {opacity: 0.9} 
+
 
 h1{
     color:rgb(255, 255, 255); /*182, 208, 250*/
@@ -153,4 +158,3 @@ p{
 
     
 }
-
