@@ -18,7 +18,7 @@
     <title>Document</title>
 
     <!-- Link to my style sheet -->
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="Portfolio_Project_About.css">
 
     <!--The next three lines allow the Vega embed-->
     <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
@@ -31,7 +31,7 @@
 <body>
     <!-- A div that contains a group of items for week 1. Can be useful for setting background colours etc.  -->
     <div class="myWeek1">
-        <h1>Data Science</h1>
+        <h1>Alicja Kobayashi</h1>
 
         <!--Biten under är extra, -->
         <a href="index.html" id="link1home">Home</a>
@@ -60,9 +60,10 @@
         <div class="chart" id="Chart22"></div>
         <p>This scatter graph plots the number of passengers carried by airline or airline group in 2019, before COVID-19 and the bailouts issued, as of April 2021, in response to the pandemic.</p>
 
-        <h3>Title</h3>
+        <h3>Number of passengers carried in Europe (1996-2020)</h3>
         <div class="chart" id="Chart2400"></div>
-        <p>[MAP?] Add comments here.</p>
+        <p><p class="rubric-launch">Link to Colab code, <a class="textLink" href="https://colab.research.google.com/drive/1VmBeWKJ5KMBlLz_C6NSP56MywwdD7Vqf?usp=sharing"> here</a>.</p></p>
+        <p>This temporal map chart shows the number of passengers carried by European country to show the growing demand of air transport, and thus the market pie to be split across carriers. The main challenge here was finding data sources which had data for as many European countries and for as many years as possible. Eurostat provides similar data, but completely or almost completely lacks data for six of the European countries depicted in the map.</p>
 
         <h3>Clustering by Airline stock prices (2017-2022)</h3>
     <div class="frame">
@@ -72,6 +73,7 @@
         <p>The dendrogram displays clusters of stock prices between 2017 and 2022 for eight airlines: Wizzair, Ryanair, TUI, Scandinavian Airlines, Lufthansa, Norwegian Air Shuttle, EasyJet and AirFrance-KLM. When clustering stock data for the eight airlines, I use the dynamic time warping technique to better capture similarities in trends.</p>
 
         <p>The two low-cost carriers, Wizzair and Ryanair, are the most distinguishable set of airlines, as seen in the length of the upper purple branch. All the other carriers are grouped into the lower purple branch, where national flag carrier AirFrance-KLM and low-cost carrier EasyJet interestingly share more similarities in trends relative to the other airlines. The grouping of the remianing airlines are nonetheless somewhat more consistent. Neither TUI nor SAS are low-cost carriers, and these seem to ge grouped with national flag carrier Lufthansa. Evidently, the separated airline here is Norwegian Air Shuttle, a low-cost carrier. The clustering of airline types is thus not entirely clear.</p>
+        <h3>Conclusion</h3>
         <p>Future researchers may want to scrape data on ticket fares from a range of airlines to compare price volatility over time across airline types and to perform clustering. </p>
 
     </div> 
@@ -103,6 +105,7 @@
     var myChart20 = "wk8.chart1.json"
     var myChart21 = "wk8.graph2.json"
     var myChart22 = "wk9.chart1.json"
+    var myChart2400 = "project_viz_map.json" //project
 
     // Embed charts:
     vegaEmbed('#Chart1', myChart1);
@@ -127,6 +130,7 @@
     vegaEmbed('#Chart20', myChart20);
     vegaEmbed('#Chart21', myChart21);
     vegaEmbed('#Chart22', myChart22); //wk9
+    vegaEmbed('#Chart2400', myChart2400); //project
 </script>
 
 </html>
