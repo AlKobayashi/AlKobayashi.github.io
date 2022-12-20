@@ -1,0 +1,180 @@
+/* Richard Davies, Data Science for Economists */
+
+/* This is my first proper css file */
+
+
+/* Import a font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+/* Set the background color for my page: */
+body{
+    background-color: rgb(105, 157, 213);
+    background-image: url(hembild.png); /* DET ÄR MLÖJLIGT ATT TA BORT DENNA RAD; hembild.png; DSC_0838.jpg; DSC_0937.jpg*/
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 80px;
+    display: flex;
+ 
+}
+
+
+
+/* Choose the appearance of the tags, h1, h3 and p: */
+/*h1, h3, p{
+    color:rgb(255, 255, 255);
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+} */
+
+.wrap{
+    text-align: center;
+}
+
+
+#link1home{
+    background-color: rgb(87, 89, 103);
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+    color: white;
+    padding: 11px 46px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.83; /* opacity 0.6 */
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+#link2project{
+    background-color: rgb(80, 80, 106);
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+    color: white;
+    padding: 11px 46px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.83;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#link3portfolio{
+    background-color: rgb(80, 80, 106);
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+    color: white;
+    padding: 11px 44px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.83;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#link4about{
+    background-color: rgb(80, 80, 106);
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+    color: white;
+    padding: 11px 46px; /*suggested: 15px 30px, dvs rutans storlek*/
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.83;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#link1home:hover {opacity: 1} 
+#link2project:hover {opacity: 1} 
+#link3portfolio:hover {opacity: 1} 
+#link4about:hover {opacity: 1} 
+
+
+h1{
+    color:rgb(255, 255, 255); /*182, 208, 250*/ /* white 255, 255, 255 */
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-size: 36px;
+}
+    
+ak{ /* Alicja Kobayashi for homepage*/
+    color:rgb(255, 255, 255); /*182, 208, 250*/
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-size: 26px;
+}
+
+h2{
+    color:rgb(255, 255, 255);
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+h3{
+    color:rgb(255, 255, 255);
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+p{
+    color:rgb(255, 255, 255);
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+}
+
+
+.myWeek1{
+    margin: auto;
+    max-width: 600px;
+    
+}
+
+.frame{ /* this tag is used for the charts that are embedded as pictures*/
+    background-color: white;
+    width: 440px;
+    height: 350px;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 3px;
+    border-color: rgb(158, 194, 252);
+    
+}
+
+
+
+/* Set the apperance of the class, chart */
+.chart{
+    background-color: white;
+    width:440px;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 3px;
+    border-color: rgb(158, 194, 252);
+
+    
+}
+
+.chart5{ /*this is to adjust frames for wk5 */
+    background-color: white;
+    width:245px;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 3px;
+    border-color: rgb(158, 194, 252);
+
+    
+}
