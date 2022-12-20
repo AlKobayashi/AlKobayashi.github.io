@@ -36,11 +36,11 @@ body{
     font-family: 'Open Sans', sans-serif;
     border: none;
     color: white;
-    padding: 11px 40px;
+    padding: 11px 46px;
     text-align: center;
     font-size: 16px;
     margin: 4px 2px;
-    opacity: 0.6;
+    opacity: 0.73; /* opacity 0.6 */
     transition: 0.3s;
     display: inline-block;
     text-decoration: none;
@@ -53,11 +53,11 @@ body{
     font-family: 'Open Sans', sans-serif;
     border: none;
     color: white;
-    padding: 11px 40px;
+    padding: 11px 46px;
     text-align: center;
     font-size: 16px;
     margin: 4px 2px;
-    opacity: 0.6;
+    opacity: 0.73;
     transition: 0.3s;
     display: inline-block;
     text-decoration: none;
@@ -69,11 +69,11 @@ body{
     font-family: 'Open Sans', sans-serif;
     border: none;
     color: white;
-    padding: 11px 40px;
+    padding: 11px 44px;
     text-align: center;
     font-size: 16px;
     margin: 4px 2px;
-    opacity: 0.6;
+    opacity: 0.73;
     transition: 0.3s;
     display: inline-block;
     text-decoration: none;
@@ -85,11 +85,11 @@ body{
     font-family: 'Open Sans', sans-serif;
     border: none;
     color: white;
-    padding: 11px 40px; /*suggested: 15px 30px*/
+    padding: 11px 46px; /*suggested: 15px 30px, dvs rutans storlek*/
     text-align: center;
     font-size: 16px;
     margin: 4px 2px;
-    opacity: 0.6;
+    opacity: 0.73;
     transition: 0.3s;
     display: inline-block;
     text-decoration: none;
@@ -134,15 +134,21 @@ p{
     text-align: left;
 }
 
+
 .myWeek1{
     margin: auto;
     max-width: 600px;
     
 }
 
-.myWeek5{
-    margin: auto;
-    max-width: 800px;
+.frame{
+    background-color: white;
+    width: 440px;
+    height: 350px;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 3px;
+    border-color: rgb(158, 194, 252);
     
 }
 
