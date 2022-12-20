@@ -64,9 +64,15 @@
         <div class="chart" id="Chart2400"></div>
         <p>[MAP?] Add comments here.</p>
 
-        <h3>Title</h3>
-        <div class="chart" id="Chart2500"></div>
-        <p>[CLUSTERING WK 10] Add comments here.</p>
+        <h3>Clustering by Airline stock prices (2017-2022)</h3>
+    <div class="frame">
+        <pi><img src="clustering_stocks.png" alt="Cluster_pic" width="400" height="350"></pi>
+    </div>
+        <p><p class="rubric-launch">Link to Colab code, <a class="textLink" href=" https://colab.research.google.com/drive/1sBqlAFsNlLzLeA9QBEg0am_0uH5mzv0n#scrollTo=sH8fs50ur98g"> here</a>.</p></p>
+        <p>The dendrogram displays clusters of stock prices between 2017 and 2022 for eight airlines: Wizzair, Ryanair, TUI, Scandinavian Airlines, Lufthansa, Norwegian Air Shuttle, EasyJet and AirFrance-KLM. When clustering stock data for the eight airlines, I use the dynamic time warping technique to better capture similarities in trends.</p>
+
+        <p>The two low-cost carriers, Wizzair and Ryanair, are the most distinguishable set of airlines, as seen in the length of the upper purple branch. All the other carriers are grouped into the lower purple branch, where national flag carrier AirFrance-KLM and low-cost carrier EasyJet interestingly share more similarities in trends relative to the other airlines. The grouping of the remianing airlines are nonetheless somewhat more consistent. Neither TUI nor SAS are low-cost carriers, and these seem to ge grouped with national flag carrier Lufthansa. Evidently, the separated airline here is Norwegian Air Shuttle, a low-cost carrier. The clustering of airline types is thus not entirely clear.</p>
+        <p>Future researchers may want to scrape data on ticket fares from a range of airlines to compare price volatility over time across airline types and to perform clustering. </p>
 
     </div> 
 </body>
@@ -124,5 +130,3 @@
 </script>
 
 </html>
-
-
