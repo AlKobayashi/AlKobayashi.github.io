@@ -182,6 +182,19 @@ p{
  
 }
 
+.chartwk3{ /*this is to adjust frames for wk2 */
+    background-color: white;
+    width:390px;
+    height: 350px;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 3px;
+    border-color: rgb(158, 194, 252);
+
+ 
+}
+
+
 .chart5{ /*this is to adjust frames for wk5 */
     background-color: white;
     width:250px;
