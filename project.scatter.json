@@ -1,8 +1,8 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "description": "A scatterplot showing PAX count in millions and bailouts in millions.",
-    "width": 290,
-    "height": 290,
+    "width": 300,
+    "height": 300,
     
       "title": {
             "text": "European Airline Groups: Passenger Count (2019) and Bailouts (2021)",
