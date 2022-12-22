@@ -35,7 +35,7 @@ body{
     font-family: 'Open Sans', sans-serif;
     border: none;
     color: white;
-    padding: 11px 46px;
+    padding: 11px 70px;
     text-align: center;
     font-size: 16px;
     margin: 4px 2px;
@@ -52,7 +52,7 @@ body{
     font-family: 'Open Sans', sans-serif;
     border: none;
     color: white;
-    padding: 11px 46px;
+    padding: 11px 70px;
     text-align: center;
     font-size: 16px;
     margin: 4px 2px;
@@ -68,7 +68,7 @@ body{
     font-family: 'Open Sans', sans-serif;
     border: none;
     color: white;
-    padding: 11px 44px;
+    padding: 11px 70px;
     text-align: center;
     font-size: 16px;
     margin: 4px 2px;
@@ -84,7 +84,7 @@ body{
     font-family: 'Open Sans', sans-serif;
     border: none;
     color: white;
-    padding: 11px 46px; /*suggested: 15px 30px, dvs rutans storlek*/
+    padding: 11px 70px; /*suggested: 15px 30px, dvs rutans storlek*/
     text-align: center;
     font-size: 16px;
     margin: 4px 2px;
@@ -130,7 +130,7 @@ p{
 
 .myWeek1{
     margin: auto;
-    max-width: 600px;
+    max-width: 800px; /*600 px */
     
 }
 
@@ -159,9 +159,32 @@ p{
     
 }
 
+.chartwk1{ /*this is to adjust frames for wk1 */
+    background-color: white;
+    width:390px;
+    height: 340px;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 3px;
+    border-color: rgb(158, 194, 252);
+
+}
+
+.chartwk2{ /*this is to adjust frames for wk2 */
+    background-color: white;
+    width:390px;
+    height: 350px;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 3px;
+    border-color: rgb(158, 194, 252);
+
+ 
+}
+
 .chart5{ /*this is to adjust frames for wk5 */
     background-color: white;
-    width:245px;
+    width:250px;
     border-width: 3px;
     border-style: solid;
     border-radius: 3px;
