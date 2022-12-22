@@ -13,7 +13,7 @@
       "color": "black"
     },
     "width": 300,
-    "height": 300,
+    "height": 280,
     
     "data": {
       "url": "https://raw.githubusercontent.com/deldersveld/topojson/master/continents/europe.json",
