@@ -10,8 +10,8 @@
   
   "data":{"url": "https://raw.githubusercontent.com/AlKobayashi/AlKobayashi.github.io/main/data_IMF_creditOutstandingCleaned.csv"},
   
-  "height": 300,
-  "width": 300,
+  "height": 270,
+  "width": 270,
 
   "mark": {
     "type": "bar",
