@@ -17,18 +17,18 @@
 
     "title": {
         "text": "Trade: UK and France",
-        "subtitle": ["Value of trade, all commodities, $ billions","Source: UN Comtrade",""],
+        "subtitle": ["Value of trade, all commodities, $ billions. Source: UN Comtrade"],
         "subtitleFontStyle":"italic",
         "subtitleFontSize":10,
         "anchor": "start",
         "color": "black"},
         
-    "width":300,
-    "height":300,
+    "width":270,
+    "height":270,
 
     "mark":{
         "type": "line",
-        "color":"seagreen",
+        "color": "seagreen",
         "strokeWidth":2,
         "opacity":1},
  
