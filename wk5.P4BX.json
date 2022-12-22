@@ -12,8 +12,8 @@
           "anchor": "start",
           "color": "black"
         },
-"width": 150,
-"height":150,
+"width": 155,
+"height":155,
 "mark": {
   "type": "line",
   "color": "rgb(0,47,167)"   
