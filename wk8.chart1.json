@@ -1,6 +1,6 @@
 {"$schema":"https://vega.github.io/schema/vega-lite/v5.json","data":{"url":"https://raw.githubusercontent.com/AlKobayashi/AlKobayashi.github.io/main/wk8colabcleaned1.csv"},
 "title": {
-      "text": "Share of income (%) spent on food and drink by income decile",
+      "text": "Share of income (%) spent on food by income decile",
       "subtitle": [
         "Data source: ONS (2021)"
       ],
@@ -13,8 +13,8 @@
 
 "mark":"bar",
 
-"width":250,
-"height":250,
+"width":200,
+"height":220,
 
 
 "encoding":
