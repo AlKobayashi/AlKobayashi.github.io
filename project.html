@@ -42,19 +42,22 @@
 
         <!--Biten ovan är extra-->
         <h3>Are low-cost carriers (LCCs) taking over the European airline market?</h3> 
-        <p>Talk about aims (200 words max).</p>
+        <p>The main aim is to examine the changing European airline market by anayzing data on the largest carriers and airline groups based in Europe, and the demand for those.</p>
 
-        <h3>Passengers carried over time</h3> 
+        <h3>Passenger growth by Airline over time</h3> 
         <div class="chart" id="Chart7"></div>
         <p>[FÖRBÄTTRA] Data was scraped from Wikipedia using Colab, where the data was also cleaned. At the end, the cleaned data was converted to a csv file to rebase the numbers at an index of 100 in 2006 to make the trajectories more easily comparable. Airlines colored in blue signify low-cost carriers, whereas the remaining gray ones are national flag carriers.</p>
         <p><p class="rubric-launch">Link to Colab code, <a class="textLink" href="https://colab.research.google.com/drive/14uwYWrbvX-PwILxvBD9lRKkEIwK7-I7I#scrollTo=c4LyLEWk17lE"> here</a>.</p></p>
   
         
+        <h3>Ranking of European Airlines and Airline groups</h3>
+        <div class="chart" id="Chart2000"></div>
+        <p>The data for this chart was scraped off of Wikipedia, using Python. Worth noting is that many of the large airline groups in the data comprise multiple different airlines, such as Luftansa Group, International Airline Group and AirFrance-KLM. The trends seen in the bar chart thus strongly indicate a growing demand for low-cost carriers. In 2019, Ryanair surpassed Lufthansa Group and has remained in the lead, maintaining a considerably greater margin throughout the pandemic. This is particularly interesting since the total passenger number mostly evened out during 2020 and in the recovery year, 2021.</p>
+        <p><p class="rubric-launch">Link to Colab code, <a class="textLink" href="https://colab.research.google.com/drive/14uwYWrbvX-PwILxvBD9lRKkEIwK7-I7I?usp=sharing"> here</a>.</p></p>
+        
         <h3>Title</h3>
         <div class="chart" id="Chart200"></div>
         <p>[SHARE LCCs?] Add comment here.</p>
-        <p><p class="rubric-launch">Link to Colab code, <a class="textLink" href="https://alkobayashi.github.io/project.html"> here</a>.</p></p>
-
         
         <h3>Airline Bailouts and Passenger Count</h3>
         <div class="chart" id="Chart22"></div>
@@ -105,6 +108,7 @@
     var myChart20 = "wk8.chart1.json"
     var myChart21 = "wk8.graph2.json"
     var myChart22 = "wk9.chart1.json"
+    var myChart2000 = "project_BAR_CHART_viz.json"
     var myChart2400 = "project_viz_map.json" //project
 
     // Embed charts:
@@ -130,6 +134,7 @@
     vegaEmbed('#Chart20', myChart20);
     vegaEmbed('#Chart21', myChart21);
     vegaEmbed('#Chart22', myChart22); //wk9
+    vegaEmbed('#Chart2000', myChart2000);
     vegaEmbed('#Chart2400', myChart2400); //project
 </script>
 
