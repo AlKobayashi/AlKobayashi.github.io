@@ -1,0 +1,64 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 300,
+    "height": 300,
+    "title": {
+      "text": "Passenger count by major European airline and airline groups",
+      "subtitle": "Data spans between 2006-2021 and is presented in millions. Source: Wikipedia (2022)",
+      "fontSize": "13",
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 10,
+      "anchor": "middle",
+      "color": "#000000",
+      "subtitleColor": "#000000"
+    },
+     "params": [
+      {
+        "name": "yearSelector", "value": 2010,
+        "bind": {
+          "input": "range",
+          "min": 2006,
+          "max": 2021,
+          "step": 1,
+          "name": "Year:"}}],
+    
+    "data": {
+      "url": "https://raw.githubusercontent.com/AlKobayashi/AlKobayashi.github.io/main/wk4scrapingairlinewiki.csv",
+      "format": {
+        "type": "csv"}
+    },
+    "transform": [{"filter": "datum.Year == yearSelector"}],
+  
+    "mark": "bar",
+    "encoding": {
+  
+  "color": {
+        "field": "Passengers",
+        "legend": "",
+        "type": "quantitative",
+        "scale": {"scheme": "bluegreen"}},
+  
+      "x": {
+        "field": "Airline", 
+        "title": "",
+        "type": "nominal", 
+        "sort": {"op": "sum", "field": "Passengers"},
+        "axis": {"labelAngle": -45}},
+      "y": {
+        "field": "Passengers", 
+        "type": "quantitative",
+        "title": "Number of Passengers"},
+      
+      "tooltip": [
+        {
+          "field": "Airline", 
+          "type": "nominal", 
+          "title": "Airline"},
+        {
+          "field": "Passengers", 
+          "type": "quantitative",
+          "title": "Passengers carried (mil.)"}
+      ]
+    }
+  }
+ 
