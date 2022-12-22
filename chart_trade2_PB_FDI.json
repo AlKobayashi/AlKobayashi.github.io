@@ -3,14 +3,14 @@
   
     "title": {
         "text": "Foreign Direct Investment - inward",
-        "subtitle": ["Total FDI in the UK (£, billions). [ONS, PB-N2SA]",""],
+        "subtitle": ["Total FDI in the UK (£, billions). [ONS, PB-N2SA]"],
         "subtitleFontStyle":"italic",
         "subtitleFontSize":10,
         "anchor": "start",
         "color": "black"},
   
-    "width":280,
-    "height":300,
+    "width":270,
+    "height":270,
   
     "data": {
         "url": "https://api.allorigins.win/raw?url=https://api.ons.gov.uk/timeseries/n2sa/dataset/pb/data",
