@@ -1,9 +1,9 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "height": 300,
-    "width": 300,
+    "height": 260,
+    "width": 250,
      "title": {
-        "text": "European countries population sizes and air emissions (2021)",
+        "text": "European countries' population and air emissions (2021)",
         "subtitle": "Source: Eurostat (2022)",
         "fontSize": 13,
         "subtitleFontStyle": "italic",
