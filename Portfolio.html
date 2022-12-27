@@ -1,0 +1,215 @@
+
+ <!--HÄR BÖRJAR NY VERSION-->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ 
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+       <!--Favicon-->
+ <link rel="icon" href="Favicon-AK2.png">
+ <link rel="shortcut icon" href="Favicon-AK2.png" />
+ <link rel="apple-touch-icon" href="Favicon-AK2.png" />
+ 
+     <title>Website</title>
+     <link rel="stylesheet" href="Portfolio.css">
+ 
+      <!--The next three lines allow the Vega embed-->
+     <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+     <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+ </head>
+ 
+ 
+ <body>
+     <div class="banner">
+         <div class="navbar">
+             <AK>Alicja Kobayashi</AK>
+             <ul>
+                 <li><a href="home.html">Home</a></li>
+                 <li><a href="Portfolio.html">Portfolio</a></li>
+                 <li><a href="Project.html">Project</a></li>
+                 <li><a href="About.html">About</a></li>
+             </ul>
+         </div>
+ 
+         <div class="content">
+             <h1 class="anim">Portfolio</h1>
+             <p class="anim">Here are the 23 graphs for the weekly Data Science homework tasks.</p>
+ 
+             <h2>Week 1</h2>
+             <table>
+             <tr>
+               <td><div class="chartwk1" id="Chart1"></div></td>
+               <td><div class="chartwk1" id="Chart2"></div></td> 
+             </tr>
+         </table>  
+             <descr> The first chart tracks trade between the UK and France. My second chart looks at FDI. </descr>
+ 
+             <h2>Week 2</h2>
+ 
+             <h3>IMF lending - in absolute terms & relative to world GDP</h3>
+             <table>
+             <tr>
+               <td><div class="chartwk2" id="Chart3"></div></td>
+               <td><div class="chartwk2" id="Chart4"></div></td> 
+             </tr>
+             </table>
+             
+             <descr>The first chart tracks IMF lending in absolute terms. The most risky year would likely be one of the years with the highest lending-to-GDP ratio. The year 1984 appears to be the riskiest year as it has the highest ratio of lending to world GDP, at nearly 0.041%.</descr>
+             
+             <h2>Week 3</h2>
+             
+             <table>
+               <tr>
+                 <td><div class="chartwk3" id="Chart5"></div></td>
+                 <td><div class="chartwk3" id="Chart6"></div></td> 
+               </tr>
+             </table> 
+ 
+             <descr>I changed the visual encoding from stacked bar chart to line chart since line charts convey trends more effectively. I also removed the gridlines for simplicity.</descr>
+             <descr><descr class="rubric-launch"><br><br>Link to Colab code, <a class="textLink" href="https://colab.research.google.com/drive/1NiLuhWwma1wlnzJMCANtsAOohtAyo-Hf?usp=sharing"> here</a>.</descr></descr>
+ 
+             <h2>Week 4</h2>
+             
+             <h3>Scraped data</h3>
+             <div class="chartwk4" id="Chart7"></div>
+             <descr><br>Data was scraped from Wikipedia using Colab, where the data was also cleaned. At the end, the cleaned data was converted to a csv file to rebase the numbers at an index of 100 in 2006 to make the trajectories more easily comparable. Airlines colored in blue signify low-cost carriers, whereas the remaining gray ones are national flag carriers.</descr>
+             
+             <descr><descr class="rubric-launch"><br><br>Link to Colab code, <a class="textLink" href="https://colab.research.google.com/drive/14uwYWrbvX-PwILxvBD9lRKkEIwK7-I7I#scrollTo=c4LyLEWk17lE"> here</a>.</descr></descr>
+ 
+             <h2>Week 5</h2>
+ 
+             <h3>UK trade in goods by classification of product by activity time series (MQ10) between 1997 and 2022.</h3>
+ 
+             <table>
+               <tr>
+                 <td><div class="chart5" id="Chart8"></div></td>
+                 <td><div class="chart5" id="Chart9"></div></td> 
+                 <td><div class="chart5" id="Chart10"></div></td>
+               </tr>
+               <tr>
+                 <td><div class="chart5" id="Chart11"></div></td>
+                 <td><div class="chart5" id="Chart12"></div></td> 
+                 <td><div class="chart5" id="Chart13"></div></td>
+               </tr>
+               <tr>
+                 <td><div class="chart5" id="Chart14"></div></td>
+                 <td><div class="chart5" id="Chart15"></div></td> 
+                 <td><div class="chart5" id="Chart16"></div></td>
+               </tr>
+             </table>  
+             <descr><descr class="rubric-launch">Link to Colab code, <a class="textLink" href="https://colab.research.google.com/drive/1Uwpq94LDuUm_-8APfCWukUqatQeTW07W#scrollTo=pMRAEV4F1cAs"> here</a>.</descr></descr>
+ 
+ 
+             <h2>Week 7</h2>
+ 
+             <h3>Maps: Base map & Choropleth map</h3>
+ 
+             <table>
+               <tr>
+                 <td><div class="chartwk7" id="Chart18"></div></td>
+                 <td><div class="chartwk7" id="Chart19"></div></td> 
+               </tr>
+             </table> 
+             <descr>The first map is a base map of Europe. The second map shows the average life expectancy for women in respective European countries. The map indicates that women in Spain have the longest average life expectancy of 86.7 years.</descr>
+             
+             <h2>Week 8</h2>
+             
+             <h3>Festival of Economics: Prices & Wages</h3>
+ 
+             <table>
+               <tr>
+                 <td><div class="chartwk8" id="Chart20"></div></td>
+                 <td><div class="chartwk8" id="Chart21"></div></td> 
+               </tr>
+             </table>
+ 
+             <descr>The first graph shows the share of income spent on food and other categories by decile group. One of the arguments made in the Prices and Wages lecture was that low-income people have a lower ability to adjust to rising price levels and that lower-income households spend a greater share of their income on food compared to higher-income households. This graph supports that claim.</descr>
+             <descr>The line chart shows the food inflation (%) in the UK between 1990 and 2022. The argument was that food prices are rising and this chart supports that.</descr>
+ 
+             <descr><descr class="rubric-launch"><br><br>Link to Colab code, <a class="textLink" href="https://colab.research.google.com/drive/1JJm60jOMTlqsxT2h34_SUbzO77c52xdA#scrollTo=f1CwyY0Zdazv"> here</a>.</descr></descr>
+ 
+             <h2>Week 9</h2>
+             <h3>Advanced Charts: Scatter Plot & Bubble Graph</h3>
+ 
+             <table>
+               <tr>
+                 <td><div class="chartwk9" id="Chart30"></div></td>
+                 <td><div class="chartwk9" id="Chart31"></div></td> 
+               </tr>
+             </table> 
+             
+             <h2>Week 10 & 11</h2>
+ 
+             <h3>Clustering & classification by firms' stock prices (2017-2022)</h3>
+             <div class="frame">
+               <pi><img src="wk10HW_cluster.png" alt="Cluster_picHW" width="400" height="350"></pi> <!--pi-->
+           </div>
+               <descr>The dendrogram displays clusters of stock prices between 2017 and 2022 for eight eight companies in various industries. The hypothesis tested is whether similar industries will be clustered into similar sets of groups or branches. The lower three firms, Swedbank, Mitsubishi and HSBC formed one cluster, where two belong in the financial sector. In the upper cluster, there are two smaller groups, where one branch consists of HM and Spotify. This makes some sense as fashion and music are more associated with each other compared to technology-related industries mostly found in the other cluster that consists of Daikin, Samsung and Fast Retailing Co.</descr>
+               <descr><descr class="rubric-launch"><br><br>Link to Colab code, <a class="textLink" href="https://colab.research.google.com/drive/185TcOadju7pryyTURy0l4uLJl1c1kHgg?usp=sharing"> here</a>.</descr></descr>
+ 
+             
+         </div>
+     </div>
+ 
+ </body>
+ 
+ <script>
+     //Define charts:
+     var myChart1 = "trade.json";
+     var myChart2 = "chart_trade2_PB_FDI.json";
+     var myChart3 = "imflending.json";
+     var myChart4 = "imflendingGDP.json";
+     var myChart5 = "wk3.badchart.json"
+     var myChart6 = "wk3.improvedchart.json"
+     var myChart7 = "wk4.passengerGraph.json"
+     var myChart8 = "wk5.P2WU.json"
+     var myChart9 = "wk5.P3NC.json"
+     var myChart10 = "wk5.P46J.json"
+     var myChart11 = "wk5.P32B.json"
+     var myChart12 = "wk5.P327.json"
+     var myChart13 = "wk5.P4BX.json"
+     var myChart14 = "wk5.P3LA.json"
+     var myChart15 = "wk5.P496.json"
+     var myChart16 = "wk5.P5J8.json"
+     var myChart17 = "wk5.P2WU.json"
+     var myChart18 = "wk7.blankeuropemap.json"
+     var myChart19 = "wk7.map2lifewomen.json"
+     var myChart20 = "wk8.chart1.json"
+     var myChart21 = "wk8.graph2.json"
+     var myChart22 = "wk9.chart1.json"
+     var myChart30 = "wk9.scatterHW.json" //actual wk9 HW
+     var myChart31 = "wk9.BUBBLE.HW-viz.json"
+ 
+     // Embed charts:
+     vegaEmbed('#Chart1', myChart1);
+     vegaEmbed('#Chart2', myChart2);
+     vegaEmbed('#Chart3', myChart3);
+     vegaEmbed('#Chart4', myChart4);
+     vegaEmbed('#Chart5', myChart5);
+     vegaEmbed('#Chart6', myChart6);
+     vegaEmbed('#Chart7', myChart7); //wk4
+     vegaEmbed('#Chart8', myChart8); //wk5
+     vegaEmbed('#Chart9', myChart9);
+     vegaEmbed('#Chart10', myChart10);
+     vegaEmbed('#Chart11', myChart11);
+     vegaEmbed('#Chart12', myChart12);
+     vegaEmbed('#Chart13', myChart12);
+     vegaEmbed('#Chart14', myChart12);
+     vegaEmbed('#Chart15', myChart12);
+     vegaEmbed('#Chart16', myChart12); //wk5
+     vegaEmbed('#Chart17', myChart17);
+     vegaEmbed('#Chart18', myChart18);
+     vegaEmbed('#Chart19', myChart19); 
+     vegaEmbed('#Chart20', myChart20);
+     vegaEmbed('#Chart21', myChart21);
+     vegaEmbed('#Chart22', myChart22);
+     vegaEmbed('#Chart30', myChart30); //wk9 HW
+     vegaEmbed('#Chart31', myChart31);
+ </script>
+ 
+ </html>

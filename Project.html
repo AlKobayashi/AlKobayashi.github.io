@@ -1,0 +1,144 @@
+
+ <!--HÄR BÖRJAR NY VERSION-->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ 
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+       <!--Favicon-->
+ <link rel="icon" href="Favicon-AK2.png">
+ <link rel="shortcut icon" href="Favicon-AK2.png" />
+ <link rel="apple-touch-icon" href="Favicon-AK2.png" />
+ 
+     <title>Website</title>
+     <link rel="stylesheet" href="Project.css">
+ 
+      <!--The next three lines allow the Vega embed-->
+     <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+     <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+ </head>
+ 
+ 
+ <body>
+     <div class="banner">
+         <div class="navbar">
+             <AK>Alicja Kobayashi</AK>
+             <ul>
+                 <li><a href="home.html">Home</a></li>
+                 <li><a href="Portfolio.html">Portfolio</a></li>
+                 <li><a href="Project.html">Project</a></li>
+                 <li><a href="About.html">About</a></li>
+             </ul>
+         </div>
+ 
+         <div class="content">
+             <h1 class="anim">Data Science Project</h1>
+             <descr class="anim"></descr>
+ 
+             <h3>Are low-cost carriers (LCCs) taking over the European airline market?</h3> 
+             <descr>The main aim is to examine the changing European airline market by anayzing data on the largest carriers and airline groups based in Europe, including the demand for those.</descr>
+             
+ 
+             <h3>Passenger growth by airline over time</h3> 
+            <div class="projectchartwk4" id="Chart7"></div>
+            <descr><br>Data was scraped from Wikipedia using Colab, where the data was also cleaned. At the end, the cleaned data was converted to a csv file to rebase the numbers at an index of 100 in 2006 to make the trajectories more easily comparable. Airlines colored in blue signify low-cost carriers, whereas the remaining gray ones are national flag carriers.</descr>
+            <descr><descr class="rubric-launch"><br><br>Link to Colab code, <a class="textLink" href="https://colab.research.google.com/drive/14uwYWrbvX-PwILxvBD9lRKkEIwK7-I7I#scrollTo=c4LyLEWk17lE"> here</a>.</descr></descr>
+  
+        
+            <h3>Ranking of European Airlines and Airline groups</h3>
+            <div class="chart" id="Chart2000"></div>
+            <descr><br>The data for this chart was scraped off of Wikipedia, using Python. Worth noting is that many of the large airline groups in the data comprise multiple different airlines, such as Luftansa Group, International Airline Group and AirFrance-KLM. The trends seen in the bar chart thus strongly indicate a growing demand for low-cost carriers. In 2019, Ryanair surpassed Lufthansa Group and has remained in the lead, maintaining a considerably greater margin throughout the pandemic. This is particularly interesting since the total passenger number mostly evened out during 2020 and in the recovery year, 2021.</descr>
+            <descr><descr class="rubric-launch"><br><br>Link to Colab code, <a class="textLink" href="https://colab.research.google.com/drive/14uwYWrbvX-PwILxvBD9lRKkEIwK7-I7I?usp=sharing"> here</a>.</descr></descr>
+        
+            <h3>Title</h3>
+            <div class="chart" id="Chart200"></div>
+            <descr>[SHARE LCCs?] Add comment here.</descr>
+        
+            <h3>Airline Bailouts and Passenger Count</h3>
+            <div class="chart" id="Chart22"></div>
+            <descr><br>This scatter graph plots the number of passengers carried by airline or airline group in 2019, before COVID-19 and the bailouts issued, as of April 2021, in response to the pandemic.</descr>
+
+            <h3>Number of passengers carried in Europe (1996-2020)</h3>
+            <div class="chart" id="Chart2400"></div>
+            <descr><br>This temporal map chart shows the number of passengers carried by European country to show the growing demand of air transport, and thus the market pie to be split across carriers. The main challenge here was finding data sources which had data for as many European countries and for as many years as possible. Eurostat provides similar data, but completely or almost completely lacks data for six of the European countries depicted in the map.</descr>
+            <descr><descr class="rubric-launch"><br><br>Link to Colab code, <a class="textLink" href="https://colab.research.google.com/drive/1VmBeWKJ5KMBlLz_C6NSP56MywwdD7Vqf?usp=sharing"> here</a>.</descr></descr>
+
+            <h3>Clustering by Airline stock prices (2017-2022)</h3>
+        <div class="frame">
+            <pi><img src="project_clustering_stocks.png" alt="Cluster_pic" width="400" height="350"></pi>
+        </div>
+            
+            <descr>The dendrogram displays clusters of stock prices between 2017 and 2022 for eight airlines: Wizzair, Ryanair, TUI, Scandinavian Airlines, Lufthansa, Norwegian Air Shuttle, EasyJet and AirFrance-KLM. When clustering stock data for the eight airlines, I use the dynamic time warping technique to better capture similarities in trends.</descr>
+
+            <descr><br><br>The two low-cost carriers, Wizzair and Ryanair, are the most distinguishable set of airlines, as seen in the length of the upper purple branch. All the other carriers are grouped into the lower purple branch, where national flag carrier AirFrance-KLM and low-cost carrier EasyJet interestingly share more similarities in trends relative to the other airlines. The grouping of the remianing airlines are nonetheless somewhat more consistent. Neither TUI nor SAS are low-cost carriers, and these seem to ge grouped with national flag carrier Lufthansa. Evidently, the separated airline here is Norwegian Air Shuttle, a low-cost carrier. The clustering of airline types is thus not entirely clear.</descr>
+            <descr><descr class="rubric-launch"><br><br>Link to Colab code, <a class="textLink" href=" https://colab.research.google.com/drive/1sBqlAFsNlLzLeA9QBEg0am_0uH5mzv0n#scrollTo=sH8fs50ur98g"> here</a>.</descr></descr>
+
+            <h3>Conclusion</h3>
+            <descr>Future researchers may want to scrape data on ticket fares from a range of airlines to compare price volatility over time across airline types and to perform clustering. </descr>
+
+             
+         </div>
+     </div>
+ 
+ </body>
+ 
+ <script>
+    //Define charts:
+    var myChart1 = "trade.json";
+    var myChart2 = "chart_trade2_PB_FDI.json";
+    var myChart3 = "imflending.json";
+    var myChart4 = "imflendingGDP.json";
+    var myChart5 = "wk3.badchart.json"
+    var myChart6 = "wk3.improvedchart.json"
+    var myChart7 = "wk4.passengerGraph.json"
+    var myChart8 = "wk5.P2WU.json"
+    var myChart9 = "wk5.P3NC.json"
+    var myChart10 = "wk5.P46J.json"
+    var myChart11 = "wk5.P32B.json"
+    var myChart12 = "wk5.P327.json"
+    var myChart13 = "wk5.P4BX.json"
+    var myChart14 = "wk5.P3LA.json"
+    var myChart15 = "wk5.P496.json"
+    var myChart16 = "wk5.P5J8.json"
+    var myChart17 = "wk5.P2WU.json"
+    var myChart18 = "wk7.blankeuropemap.json"
+    var myChart19 = "wk7.map2lifewomen.json"
+    var myChart20 = "wk8.chart1.json"
+    var myChart21 = "wk8.graph2.json"
+    var myChart22 = "project.scatter.json"
+    var myChart2000 = "project_BAR_CHART_viz.json"
+    var myChart2400 = "project_viz_map.json" //project
+
+    // Embed charts:
+    vegaEmbed('#Chart1', myChart1);
+    vegaEmbed('#Chart2', myChart2);
+    vegaEmbed('#Chart3', myChart3);
+    vegaEmbed('#Chart4', myChart4);
+    vegaEmbed('#Chart5', myChart5);
+    vegaEmbed('#Chart6', myChart6);
+    vegaEmbed('#Chart7', myChart7); //wk4
+    vegaEmbed('#Chart8', myChart8); //wk5
+    vegaEmbed('#Chart9', myChart9);
+    vegaEmbed('#Chart10', myChart10);
+    vegaEmbed('#Chart11', myChart11);
+    vegaEmbed('#Chart12', myChart12);
+    vegaEmbed('#Chart13', myChart12);
+    vegaEmbed('#Chart14', myChart12);
+    vegaEmbed('#Chart15', myChart12);
+    vegaEmbed('#Chart16', myChart12); //wk5
+    vegaEmbed('#Chart17', myChart17);
+    vegaEmbed('#Chart18', myChart18);
+    vegaEmbed('#Chart19', myChart19); 
+    vegaEmbed('#Chart20', myChart20);
+    vegaEmbed('#Chart21', myChart21);
+    vegaEmbed('#Chart22', myChart22); //wk9
+    vegaEmbed('#Chart2000', myChart2000);
+    vegaEmbed('#Chart2400', myChart2400); //project
+</script>
+ 
+ </html>

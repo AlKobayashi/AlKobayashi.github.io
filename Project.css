@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+ }
+ .banner{
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),url(LDN.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+ }
+ .navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35 px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+
+ .logo{  /* this is for a pic-logo */
+    width: 120px;
+    cursor: pointer;
+    margin-top: 3%; /*this bit is just extra */
+ }
+
+ .navbar AK{ /*Alicja Kobayashi */
+   margin-top: 5%;
+   color: #fff;
+   font-size: 30;
+   font-weight: bold 100;
+   list-style: none;
+   display: inline-block;
+   margin: 40 20px;  
+   position: relative;
+ }
+
+ .navbar ul li{ /* navigation bar*/ 
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;  
+    position: relative;
+ }
+ .navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase; /*remove this to have lower-case */
+ }
+ .navbar ul li::after{
+    content:'';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.4s;
+
+ }
+ .navbar ul li:hover::after{
+    width: 100%;
+ }
+
+ .content{ /* this is the content centered in the home page*/
+   margin: auto;
+   max-width: 800px;
+   text-align: left;
+   color: rgb(0, 0, 0);
+
+}
+.content h1{ /* Data Science Project */
+   font-size: 30px;
+   font-weight: normal;
+   margin-top: 80px;
+   text-align: center;
+}
+
+.content h2{ /* Week 1,2,3,... */
+   font-size: 25x;
+   margin-top: 90px;
+   text-align: center;
+}
+
+.content h3{ /* Week 1,2,3,... subtitles */
+   font-size: 18px;
+   margin-top: 30px;
+   margin-bottom: 10px;
+   text-align: center;
+}
+.content p{ /* A brief description */
+   margin: 20px auto;
+   font-weight: 100;
+   font-size: 20px;
+   line-height: 25px;
+   text-align: center;
+}
+
+ /*THis bit below is just extra */
+.anim{
+   opacity: 0;
+   transform: translateY(1px);
+   animation: moveup 0.5s linear forwards;
+}
+@keyframes moveup{
+   100%{
+      opacity: 1;
+      transform: translateY(0px);
+   }
+}
+
+.content descr{
+   margin: 20px auto;
+   font-weight: 100;
+   font-size: 17px;
+   line-height: 25px;
+   text-align: left;
+}
+
+.frame{ /* this tag is used for the charts that are embedded as pictures*/
+   background-color: white;
+   width: 440px;
+   height: 350px;
+   border-width: 3px;
+   border-style: solid;
+   border-radius: 3px;
+   border-color: rgb(255, 255, 255);
+   
+}
+
+
+/* Set the apperance of the class, standard chart */
+.chart{
+   background-color: white;
+   width:450px;
+   border-width: 3px;
+   border-style: solid;
+   border-radius: 3px;
+   border-color: rgb(255, 255, 255);
+
+   
+}
+
+.chartwk1{ /*this is to adjust frames for wk1 */
+    background-color: white;
+    margin-top: 5%;
+    width:390px;
+    height: 340px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 2px;
+    border-color: rgb(255, 255, 255);
+
+}
+
+.chartwk2{ /*this is to adjust frames for wk2 */
+   background-color: white;
+   width:390px;
+   height: 350px;
+   border-width: 3px;
+   border-style: solid;
+   border-radius: 3px;
+   border-color: rgb(255, 255, 255);
+
+
+}
+
+.chartwk3{ /*this is to adjust frames for wk2 */
+   background-color: white;
+   width:390px;
+   height: 350px;
+   border-width: 3px;
+   border-style: solid;
+   border-radius: 3px;
+   border-color: rgb(255, 255, 255);
+
+
+}
+
+.chartwk4{ /*this is to adjust frames for wk4 */
+   background-color: white;
+   width:510px;
+   height: 360px;
+   border-width: 3px;
+   border-style: solid;
+   border-radius: 3px;
+   border-color: rgb(255, 255, 255);
+
+
+}
+
+.chart5{ /*this is to adjust frames for wk5 */
+   background-color: white;
+   width:250px;
+   border-width: 3px;
+   border-style: solid;
+   border-radius: 3px;
+   border-color: rgb(255, 255, 255);
+
+   
+}
+
+.chartwk7{ /*this is to adjust frames for wk2 */
+   background-color: white;
+   width:390px;
+   height: 350px;
+   border-width: 3px;
+   border-style: solid;
+   border-radius: 3px;
+   border-color: rgb(255, 255, 255);
+
+
+}
+
+.chartwk8{ /*this is to adjust frames for wk8 */
+   background-color: white;
+   width:390px;
+   height: 350px;
+   border-width: 3px;
+   border-style: solid;
+   border-radius: 3px;
+   border-color:rgb(255, 255, 255);
+
+
+}
+
+.chartwk9{ /*this is to adjust frames for wk2 */
+   background-color: white;
+   width:390px;
+   height: 350px;
+   border-width: 3px;
+   border-style: solid;
+   border-radius: 3px;
+   border-color: rgb(255, 255, 255);
+
+
+}
+
+.projectchartwk4{ /*this is to adjust frames for wk4 */
+   background-color: white;
+   width:510px;
+   height: 360px;
+   border-width: 3px;
+   border-style: solid;
+   border-radius: 3px;
+   border-color: rgb(255, 255, 255);
+
+
+}

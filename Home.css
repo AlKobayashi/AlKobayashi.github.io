@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+ }
+ .banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),url(DSC_0838.jpg);
+    background-size: cover;
+    background-position: center;
+ }
+ .navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35 px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+
+ .logo{  /* this is for a pic-logo */
+    width: 120px;
+    cursor: pointer;
+    margin-top: 3%; /*this bit is jut extra */
+ }
+
+ .navbar AK{
+   margin-top: 5%;
+   color: #fff;
+   font-size: 30;
+   font-weight: bold 100;
+   list-style: none;
+   display: inline-block;
+   margin: 40 20px;  
+   position: relative;
+ }
+
+ .navbar ul li{ /* navigation bar*/ 
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;  
+    position: relative;
+ }
+ .navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase; /*remove this to have lower-case */
+ }
+ .navbar ul li::after{
+    content:'';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.4s;
+
+ }
+ .navbar ul li:hover::after{
+    width: 100%;
+ }
+
+ .content{ /* this is the content centered in the home page*/
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-60%);
+    text-align: center;
+    color: #fff;
+
+ }
+ .content h1{ /* Data Science */
+    font-size: 40px;
+    margin-top: 80px;
+ }
+ .content p{ /* Welcome to my website! */
+    margin: 20px auto;
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 25px;
+ }
+
+ /*THis bit below is just extra */
+.anim{
+   opacity: 0;
+   transform: translateY(30px);
+   animation: moveup 0.5s linear forwards;
+}
+@keyframes moveup{
+   100%{
+      opacity: 1;
+      transform: translateY(0px);
+   }
+}
