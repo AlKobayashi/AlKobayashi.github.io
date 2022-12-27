@@ -1,46 +1,51 @@
-{ 
+{
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-     
-       "title": {
-        "text": "Passenger growth across major European Airlines 2006-2021",
-        "subtitle":"Indexed at 100 in 2006. Source: Wikipedia (2022).",
-        "subtitleFontStyle":"italic",
-        "subtitleFontSize":10,
-        "anchor": "start",
-        "color": "black"},
+    "width": 290, "height": 290,
+        "title": {
+        "text": "Passenger count by major European airline and airline groups",
+        "subtitle": "Data spans between 2006-2021 and is presented in millions. Source: Wikipedia (2022)",
+        "fontSize": 13,
+        "subtitleFontStyle": "italic",
+        "subtitleFontSize": 10,
+        "anchor": "middle",
+        "color": "#000000",
+        "subtitleColor": "#000000"
+      },
+    "data": {"url": "https://raw.githubusercontent.com/AlKobayashi/AlKobayashi.github.io/main/wk4scrapingairlinewiki.csv"},
     
-      "data": {
-      "url": "https://raw.githubusercontent.com/AlKobayashi/AlKobayashi.github.io/main/wk4.airlineranking.version2.csv"
-    },
-
-    "repeat": {"layer": ["Ryanair", "Wizz Air","Norwegian Air Shuttle ASA", "Pegasus Airlines", "EasyJet","Lufthansa Group", "Aeroflot Group", "Turkish Airlines", "Air France-KLM", "International Airlines Group","S7 Airlines", "SAS Group", "Ural Airlines", "Aegean Airlines", "UTair Aviation","TAP Portugal"]},
-   
-    "spec": {
-        
-        "height": 280,
-        "width": 220,
- 
-        "mark": {
-            "type":"line",
-            "strokeWidth":2},    
-  
-        "encoding": {
-            "x": {
-                "field": "Year",
-                "title": null,
-                "type": "temporal"},
     
-            "y": {
-                "field": {"repeat": "layer"},
-                "type": "quantitative",
-                "title": "Passenger growth"},
-    
-            "color": {
-                "datum": {"repeat": "layer"},
-                "scale": {"range": ["blue", "blue", "blue", "blue", "blue", "lightgray", "lightgray","lightgray","lightgray","lightgray","lightgray","lightgray","lightgray","lightgray","lightgray","lightgray"]}}
-        
-        
-                
-          } 
+    "mark": "area",
+    "encoding": {
+      
+      "tooltip": [
+            {"field": "Airline", 
+            "type": "nominal", 
+            "title": "Airline"},
+            {"field": "Year", 
+            "type": "temporal", 
+            "title": "Year"},
+            {"field": "Passengers", 
+            "type": "quantitative", 
+            "title": "Passengers"}
+          ],
+      "x": {
+        "type": "temporal", 
+        "field": "Year", 
+        "title": null
+      },
+      "y": {
+        "aggregate": "sum", 
+        "field": "Passengers", 
+        "type": "quantitative", 
+        "title":"Passengers (millions)"
+      },
+      "order": {"field": "orderOfData", 
+      "type": "quantitative"},
+      "color": {
+        "field": "Airline",
+        "scale": {"scheme": "magma"}
       }
+    }
+    
   }
+  
