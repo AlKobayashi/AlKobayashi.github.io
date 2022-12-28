@@ -24,7 +24,7 @@
       "y": {
         "field": "Bailout 2021",
         "type": "quantitative",
-        "title": "Bailout (millions €)",
+        "title": "Bailout (billions €)",
         "scale": {"zero": false}
       },
       "color": {"field": "Indicator", "type": "nominal", "title":"Carrier type"},
@@ -32,7 +32,7 @@
       "tooltip": [
           {"field":"Airline", "type": "nominal", "title":"Airline Group"},
           {"field": "PAX count 2019", "type": "nominal","title":"PAX count (millions)"},
-          {"field": "Bailout 2021", "type": "nominal","title":"Bailout (in million €)"}
+          {"field": "Bailout 2021", "type": "nominal","title":"Bailout (in billion €)"}
           ]
     }
   }
