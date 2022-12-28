@@ -1,0 +1,317 @@
+,Airline,Year,Passengers
+0,Ryanair,2021,72.40
+1,Ryanair,2020,52.01
+2,Ryanair,2019,152.40
+3,Ryanair,2018,139.20
+4,Ryanair,2017,128.77
+5,Ryanair,2016,116.80
+6,Ryanair,2015,101.40
+7,Ryanair,2014,86.40
+8,Ryanair,2013,81.40
+9,Ryanair,2012,79.60
+10,Ryanair,2011,76.40
+11,Ryanair,2010,72.70
+12,Ryanair,2009,65.30
+13,Ryanair,2008,57.70
+14,Ryanair,2007,49.00
+15,Ryanair,2006,40.50
+16,Lufthansa Group,2021,46.90
+17,Lufthansa Group,2020,36.35
+18,Lufthansa Group,2019,145.20
+19,Lufthansa Group,2018,142.30
+20,Lufthansa Group,2017,130.04
+21,Lufthansa Group,2016,117.40
+22,Lufthansa Group,2015,115.20
+23,Lufthansa Group,2014,112.50
+24,Lufthansa Group,2013,110.40
+25,Lufthansa Group,2012,108.90
+26,Lufthansa Group,2011,112.00
+27,Lufthansa Group,2010,95.10
+28,Lufthansa Group,2009,81.20
+29,Lufthansa Group,2008,76.40
+30,Lufthansa Group,2007,68.80
+31,Lufthansa Group,2006,59.10
+32,Aeroflot Group,2021,45.81
+33,Aeroflot Group,2020,30.16
+34,Aeroflot Group,2019,60.70
+35,Aeroflot Group,2018,55.70
+36,Aeroflot Group,2017,50.13
+37,Aeroflot Group,2016,43.40
+38,Aeroflot Group,2015,39.40
+39,Aeroflot Group,2014,34.70
+40,Aeroflot Group,2013,31.40
+41,Aeroflot Group,2012,27.50
+42,Aeroflot Group,2011,16.40
+43,Aeroflot Group,2010,14.10
+44,Aeroflot Group,2009,11.10
+45,Aeroflot Group,2008,11.60
+46,Aeroflot Group,2007,10.20
+47,Aeroflot Group,2006,8.70
+48,Turkish Airlines,2021,44.80
+49,Turkish Airlines,2020,27.95
+50,Turkish Airlines,2019,74.28
+51,Turkish Airlines,2018,75.16
+52,Turkish Airlines,2017,68.61
+53,Turkish Airlines,2016,62.80
+54,Turkish Airlines,2015,61.20
+55,Turkish Airlines,2014,54.80
+56,Turkish Airlines,2013,48.30
+57,Turkish Airlines,2012,39.00
+58,Turkish Airlines,2011,32.60
+59,Turkish Airlines,2010,29.10
+60,Turkish Airlines,2009,25.10
+61,Turkish Airlines,2008,22.60
+62,Turkish Airlines,2007,19.60
+63,Turkish Airlines,2006,16.90
+64,Air France-KLM,2021,44.67
+65,Air France-KLM,2020,34.10
+66,Air France-KLM,2019,104.20
+67,Air France-KLM,2018,101.45
+68,Air France-KLM,2017,98.72
+69,Air France-KLM,2016,93.40
+70,Air France-KLM,2015,89.80
+71,Air France-KLM,2014,87.40
+72,Air France-KLM,2013,78.40
+73,Air France-KLM,2012,77.50
+74,Air France-KLM,2011,75.80
+75,Air France-KLM,2010,70.80
+76,Air France-KLM,2009,71.40
+77,Air France-KLM,2008,73.80
+78,Air France-KLM,2007,74.80
+79,Air France-KLM,2006,73.50
+80,International Airlines Group,2021,38.86
+81,International Airlines Group,2020,31.30
+82,International Airlines Group,2019,118.30
+83,International Airlines Group,2018,112.92
+84,International Airlines Group,2017,104.83
+85,International Airlines Group,2016,100.70
+86,International Airlines Group,2015,94.90
+87,International Airlines Group,2014,77.30
+88,International Airlines Group,2013,67.20
+89,International Airlines Group,2012,54.60
+90,International Airlines Group,2011,51.70
+91,International Airlines Group,2010,50.60
+92,International Airlines Group,2009,53.30
+93,International Airlines Group,2008,59.80
+94,International Airlines Group,2007,61.70
+95,International Airlines Group,2006,63.20
+96,Wizz Air,2021,21.70
+97,Wizz Air,2020,16.67
+98,Wizz Air,2019,39.80
+99,Wizz Air,2018,33.81
+100,Wizz Air,2017,28.27
+101,Wizz Air,2016,22.78
+102,Wizz Air,2015,19.20
+103,Wizz Air,2014,15.80
+104,Wizz Air,2013,13.50
+105,Wizz Air,2012,12.00
+106,Wizz Air,2011,11.20
+107,Wizz Air,2010,9.60
+108,Wizz Air,2009,7.80
+109,Wizz Air,2008,5.80
+110,Wizz Air,2007,4.20
+111,Wizz Air,2006,3.00
+112,EasyJet,2021,20.40
+113,EasyJet,2020,16.09
+114,EasyJet,2019,103.30
+115,EasyJet,2018,88.50
+116,EasyJet,2017,81.63
+117,EasyJet,2016,74.50
+118,EasyJet,2015,69.90
+119,EasyJet,2014,65.30
+120,EasyJet,2013,61.40
+121,EasyJet,2012,59.20
+122,EasyJet,2011,55.50
+123,EasyJet,2010,49.70
+124,EasyJet,2009,46.10
+125,EasyJet,2008,44.60
+126,EasyJet,2007,38.20
+127,EasyJet,2006,33.00
+128,Pegasus Airlines,2021,20.16
+129,Pegasus Airlines,2020,14.71
+130,Pegasus Airlines,2019,30.76
+131,Pegasus Airlines,2018,29.97
+132,Pegasus Airlines,2017,27.82
+133,Pegasus Airlines,2016,24.14
+134,Pegasus Airlines,2015,22.30
+135,Pegasus Airlines,2014,19.70
+136,Pegasus Airlines,2013,16.80
+137,Pegasus Airlines,2012,13.60
+138,Pegasus Airlines,2011,11.30
+139,Pegasus Airlines,2010,8.60
+140,Pegasus Airlines,2009,5.90
+141,Pegasus Airlines,2008,4.40
+142,Pegasus Airlines,2007,0.00
+143,Pegasus Airlines,2006,3.10
+144,S7 Airlines,2021,17.83
+145,S7 Airlines,2020,12.35
+146,S7 Airlines,2019,17.90
+147,S7 Airlines,2018,15.96
+148,S7 Airlines,2017,14.25
+149,S7 Airlines,2016,13.15
+150,S7 Airlines,2015,10.60
+151,S7 Airlines,2014,10.10
+152,S7 Airlines,2013,9.30
+153,S7 Airlines,2012,8.30
+154,S7 Airlines,2011,5.10
+155,S7 Airlines,2010,4.80
+156,S7 Airlines,2009,5.60
+157,S7 Airlines,2008,5.90
+158,S7 Airlines,2007,5.70
+159,S7 Airlines,2006,4.90
+160,SAS Group,2021,10.19
+161,SAS Group,2020,8.81
+162,SAS Group,2019,29.80
+163,SAS Group,2018,30.00
+164,SAS Group,2017,28.37
+165,SAS Group,2016,29.40
+166,SAS Group,2015,27.10
+167,SAS Group,2014,27.30
+168,SAS Group,2013,25.40
+169,SAS Group,2012,25.40
+170,SAS Group,2011,24.70
+171,SAS Group,2010,23.10
+172,SAS Group,2009,22.80
+173,SAS Group,2008,27.00
+174,SAS Group,2007,27.20
+175,SAS Group,2006,26.90
+176,Ural Airlines,2021,9.20
+177,Ural Airlines,2020,5.60
+178,Ural Airlines,2019,9.62
+179,Ural Airlines,2018,9.00
+180,Ural Airlines,2017,8.00
+181,Ural Airlines,2016,6.47
+182,Ural Airlines,2015,5.40
+183,Ural Airlines,2014,5.10
+184,Ural Airlines,2013,4.40
+185,Ural Airlines,2012,3.50
+186,Ural Airlines,2011,2.50
+187,Ural Airlines,2010,1.80
+188,Ural Airlines,2009,1.50
+189,Ural Airlines,2008,1.50
+190,Ural Airlines,2007,1.20
+191,Ural Airlines,2006,1.00
+192,Aegean Airlines,2021,7.19
+193,Aegean Airlines,2020,5.17
+194,Aegean Airlines,2019,14.99
+195,Aegean Airlines,2018,13.97
+196,Aegean Airlines,2017,13.22
+197,Aegean Airlines,2016,12.46
+198,Aegean Airlines,2015,11.60
+199,Aegean Airlines,2014,10.20
+200,Aegean Airlines,2013,8.80
+201,Aegean Airlines,2012,8.90
+202,Aegean Airlines,2011,9.90
+203,Aegean Airlines,2010,10.10
+204,Aegean Airlines,2009,10.20
+205,Aegean Airlines,2008,11.30
+206,Aegean Airlines,2007,11.10
+207,Aegean Airlines,2006,10.10
+208,UTair Aviation,2021,7.12
+209,UTair Aviation,2020,4.90
+210,UTair Aviation,2019,8.09
+211,UTair Aviation,2018,7.65
+212,UTair Aviation,2017,7.30
+213,UTair Aviation,2016,6.65
+214,UTair Aviation,2015,8.80
+215,UTair Aviation,2014,11.20
+216,UTair Aviation,2013,10.40
+217,UTair Aviation,2012,7.80
+218,UTair Aviation,2011,5.80
+219,UTair Aviation,2010,5.20
+220,UTair Aviation,2009,3.90
+221,UTair Aviation,2008,3.20
+222,UTair Aviation,2007,2.90
+223,UTair Aviation,2006,2.40
+224,Norwegian Air Shuttle ASA,2021,6.19
+225,Norwegian Air Shuttle ASA,2020,6.87
+226,Norwegian Air Shuttle ASA,2019,36.20
+227,Norwegian Air Shuttle ASA,2018,37.34
+228,Norwegian Air Shuttle ASA,2017,33.15
+229,Norwegian Air Shuttle ASA,2016,29.30
+230,Norwegian Air Shuttle ASA,2015,25.80
+231,Norwegian Air Shuttle ASA,2014,24.00
+232,Norwegian Air Shuttle ASA,2013,20.70
+233,Norwegian Air Shuttle ASA,2012,17.70
+234,Norwegian Air Shuttle ASA,2011,15.70
+235,Norwegian Air Shuttle ASA,2010,13.00
+236,Norwegian Air Shuttle ASA,2009,10.80
+237,Norwegian Air Shuttle ASA,2008,9.10
+238,Norwegian Air Shuttle ASA,2007,6.90
+239,Norwegian Air Shuttle ASA,2006,5.10
+240,TAP Air Portugal,2021,5.83
+241,TAP Air Portugal,2020,4.66
+242,TAP Air Portugal,2019,17.05
+243,TAP Air Portugal,2018,15.89
+244,TAP Air Portugal,2017,14.27
+245,TAP Air Portugal,2016,11.72
+246,TAP Air Portugal,2015,11.30
+247,TAP Air Portugal,2014,11.40
+248,TAP Air Portugal,2013,10.70
+249,TAP Air Portugal,2012,10.20
+250,TAP Air Portugal,2011,9.80
+251,TAP Air Portugal,2010,9.10
+252,TAP Air Portugal,2009,8.40
+253,TAP Air Portugal,2008,8.70
+254,TAP Air Portugal,2007,7.90
+255,TAP Air Portugal,2006,6.90
+256,Volotea,2020,3.80
+257,Volotea,2019,7.60
+258,Volotea,2018,6.57
+259,Volotea,2017,4.82
+260,Volotea,2016,4.30
+261,Volotea,2013,1.80
+262,Volotea,2012,1.40
+263,Volotea,2011,0.00
+264,Volotea,2010,0.00
+265,Volotea,2009,0.00
+266,Volotea,2008,0.00
+267,Volotea,2007,0.00
+268,Volotea,2006,0.00
+269,LOT Polish Airlines,2021,4.20
+270,LOT Polish Airlines,2020,3.59
+271,LOT Polish Airlines,2019,11.79
+272,LOT Polish Airlines,2018,10.61
+273,LOT Polish Airlines,2017,6.89
+274,LOT Polish Airlines,2016,5.58
+275,LOT Polish Airlines,2015,6.10
+276,LOT Polish Airlines,2014,5.90
+277,LOT Polish Airlines,2013,6.30
+278,LOT Polish Airlines,2012,5.80
+279,LOT Polish Airlines,2011,5.50
+280,LOT Polish Airlines,2010,5.00
+281,LOT Polish Airlines,2009,4.00
+282,LOT Polish Airlines,2008,4.30
+283,LOT Polish Airlines,2007,3.70
+284,LOT Polish Airlines,2006,0.00
+285,Air Europa,2020,3.13
+286,Air Europa,2019,11.84
+287,Air Europa,2018,10.60
+288,Air Europa,2017,10.60
+289,Air Europa,2016,10.20
+290,Air Europa,2015,8.10
+291,Air Europa,2014,9.00
+292,Air Europa,2013,8.10
+293,Air Europa,2012,8.70
+294,Air Europa,2011,8.90
+295,Air Europa,2010,9.00
+296,Air Europa,2009,9.70
+297,Air Europa,2008,9.90
+298,Air Europa,2007,8.10
+299,Air Europa,2006,59.00
+300,Nordwind Airlines,2021,5.93
+301,Nordwind Airlines,2020,2.94
+302,Nordwind Airlines,2019,5.54
+303,Nordwind Airlines,2018,4.92
+304,Nordwind Airlines,2017,3.55
+305,Nordwind Airlines,2016,1.79
+306,Nordwind Airlines,2015,2.67
+307,Nordwind Airlines,2014,4.47
+308,Nordwind Airlines,2013,3.66
+309,Nordwind Airlines,2012,2.17
+310,Nordwind Airlines,2011,1.72
+311,Nordwind Airlines,2010,1.19
+312,Nordwind Airlines,2009,0
+313,Nordwind Airlines,2008,0
+314,Nordwind Airlines,2007,0
+315,Nordwind Airlines,2006,0
