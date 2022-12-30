@@ -134,7 +134,7 @@
 /* Set the apperance of the class, standard chart */
 .chart{
    background-color: white;
-   width:450px;
+   width: 400px;
    border-width: 3px;
    border-style: solid;
    border-radius: 3px;
