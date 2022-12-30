@@ -40,46 +40,84 @@
              <h1 class="anim">Data Science Project</h1>
              <descr class="anim"></descr>
  
-             <h3>Are low-cost carriers (LCCs) taking over the European airline market?</h3> 
-             <descr>The main aim is to examine the changing European airline market by anayzing data on the largest carriers and airline groups based in Europe, including the demand for those.</descr>
+             <h3>Are low-cost carriers (LCCs) taking over the European airline market? [99]</h3> 
+             <descr>In the late 1970s, the domestic airline market in the US liberalised following deregulation in international bilateral agreements, resulting in intensified competition through the rise of low-cost carriers (LCC), an overall decline in ticket prices and rising number of passengers. A similar market liberalization spread to Europe with three new sets of deregulating policies, all of which took full effect in 1997 allowing airlines to compete more freely. The aim is to examine the changing European airline market by analyzing various market trends across the largest carriers and airline groups based in Europe, including the fluctuating demand for these.</descr>
              
  
-             <h3>Passenger growth by airline over time</h3> 
-            <div class="projectchartwk4" id="Chart7"></div>
-            <descr><br>Data was scraped from Wikipedia using Colab, where the data was also cleaned. At the end, the cleaned data was converted to a csv file to rebase the numbers at an index of 100 in 2006 to make the trajectories more easily comparable. Airlines colored in blue signify low-cost carriers, whereas the remaining gray ones are national flag carriers.</descr>
-            <descr><descr class="rubric-launch"><br><br>Link to Colab code, <a class="textLink" href="https://colab.research.google.com/drive/14uwYWrbvX-PwILxvBD9lRKkEIwK7-I7I#scrollTo=c4LyLEWk17lE"> here</a>.</descr></descr>
-  
+             <h3> European Passenger growth [KLAR, 210]</h3> 
+
+             <table>
+                <tr>
+                  <td><div class="chart" id="Chart7"></div></td>
+                  <td><div class="chart" id="Chart2000"></div></td> 
+                </tr>
+              </table> 
+
+            <descr><br>The data for these charts were scraped on Wikipedia, using Python. Both charts reveal a growing demand for low-cost carriers, with Ryainair taking the lead in passenger count in 2019 surpassing the airline giant Lufthansa Group. Notably, Ryanair has maintained a considerably greater margin throughout the pandemic, even though the passenger numbers somewhat evened out across carriers during 2020 and 2021.</descr>
+            <descr><br><br>Initially, the data in the bar chart was incorrectly sorted for airlines whose data was missing for at least one year. While missing observations coded as "NaN" were appropriately interpreted as 0, missing observations coded as "-" were somehow misread when sorted in Vega Lite. To correct for this, I recoded all "-" as "NaN" and then coded all "NaN" as "0". This fixed the sorting issue in Vega Lite. However, once the graph was saved as a json-file in VC Studio, the sorting was wrong when displayed on the website, despite using the new dataset. By looking at each individual code and by deleting the color commands, I finally realised that the sorting also depends on the color encoding command. I revisited my Python notebook once again and added a "Category" variable to refer to this in the color encoding, which solved the sorting issue. </descr>
+
+            <descr><descr class="rubric-launch"><br><br>Link to Colab code, <a class="textLink" href="https://colab.research.google.com/drive/1rSh9_YST4Meqte2yxNAYu-3AvOiVsIE0?usp=sharing"> here</a>.</descr></descr>
         
-            <h3>Ranking of European Airlines and Airline groups</h3>
-            <div class="chart" id="Chart2000"></div>
-            <descr><br>The data for this chart was scraped off of Wikipedia, using Python. Worth noting is that many of the large airline groups in the data comprise multiple different airlines, such as Luftansa Group, International Airline Group and AirFrance-KLM. The trends seen in the bar chart thus strongly indicate a growing demand for low-cost carriers. In 2019, Ryanair surpassed Lufthansa Group and has remained in the lead, maintaining a considerably greater margin throughout the pandemic. This is particularly interesting since the total passenger number mostly evened out during 2020 and in the recovery year, 2021.</descr>
-            <descr><descr class="rubric-launch"><br><br>Link to Colab code, <a class="textLink" href="https://colab.research.google.com/drive/14uwYWrbvX-PwILxvBD9lRKkEIwK7-I7I?usp=sharing"> here</a>.</descr></descr>
-        
-            <h3>Title</h3>
+            <h3>Fleet size</h3>
             <div class="chart" id="Chart200"></div>
-            <descr>[SHARE LCCs?] Add comment here.</descr>
+            <descr><br>This chart shows Europe's 13 largest airlines by fleet size. 
+                <br><br>The data was scraped from InformationDesign, using Python. The scraper identified five separate tables in the page, all of which containing the desired information. I therefore appended all five lists into a single dataframe. The issue was that the final dataframe did not have unique index numbers for each row of data. Since we drop observations by referring to their index number, it becomes problematic if five different airlines share the same index number. I found an additional command "ignore_index=True" which prevents the stacking of index numbers but rather gives the appended datasets unique index numbers. This is what we need to drop the non-European airlines included in the datasets.</descr>
+
+            <descr><descr class="rubric-launch"><br><br>Link to Colab code, <a class="textLink" href="https://colab.research.google.com/drive/1cClX4g8MztPxG7oUG-zYunB3uYqatlXl?usp=sharing"> here</a>.</descr></descr>
+
         
-            <h3>Airline Bailouts and Passenger Count</h3>
+            <h3>Airline Bailouts and Passenger Count [KLAR]</h3>
             <div class="chart" id="Chart22"></div>
-            <descr><br>This scatter graph plots the number of passengers carried by airline or airline group in 2019, before COVID-19 and the bailouts issued, as of April 2021, in response to the pandemic.</descr>
+            <descr><br>This scatter graph plots the number of passengers carried by airline or airline group in 2019, before COVID-19 and the bailouts issued, as of April 2021, in response to the pandemic. The chart suggests that LCCs, displayed as blue circles in the chart, generally receive less state aid than their non-LCC competitors, displayed as orange squares.</descr>
+
+            <descr><br><br>The passenger data was scraped from Wikipedia using Python while the bailout data was available as a downloadable spreadsheet on Statista. I had initially attempted to scrape the data on Statista to concatenate the datasets in Python. However, I ultimately decided to make use of the spreadsheet since I found it excessively time-consuming to scrape tooltip-data which only appears when you hover the mouse over the bars. Using the spreadsheet, I divided the airline groups whose bailout data was separated into multiple airlines in the scraped dataset to obtain more matching observations.</descr>
 
             <h3>Number of passengers carried in Europe (1996-2020)</h3>
             <div class="chart" id="Chart2400"></div>
-            <descr><br>This temporal map chart shows the number of passengers carried by European country to show the growing demand of air transport, and thus the market pie to be split across carriers. The main challenge here was finding data sources which had data for as many European countries and for as many years as possible. Eurostat provides similar data, but completely or almost completely lacks data for six of the European countries depicted in the map.</descr>
+            <descr><br>This map chart shows the number of passengers carried by European country to show the growing demand of air transport to be split across competing carriers. The only challenge here was finding data sources which had data for as many European countries and for as many years as possible. Eurostat provides similar data, but define passenger count differently and completely or almost completely lack data for seven of the European countries depicted in the map. I therefore chose to stick with the dataset provided by the World Bank Data.</descr>
+            <descr><br><br>The dataset was available on the World Bank Data website as a csv-file. Before beginning the cleaning process, I used Excel to separate the European countries from the non-European countries. I then moved the dataset to Python (Google Colab) to do the main data cleaning, such as removing redundant variables and transforming the data from long format to TIDY format.</descr>
             <descr><descr class="rubric-launch"><br><br>Link to Colab code, <a class="textLink" href="https://colab.research.google.com/drive/1VmBeWKJ5KMBlLz_C6NSP56MywwdD7Vqf?usp=sharing"> here</a>.</descr></descr>
 
-            <h3>Clustering by Airline stock prices (2017-2022)</h3>
+            <descr><br><br>COMMENT: Divide numbers by millions in either Excel or Python, or Vega-Lite?</descr>
+
+            <h3>Clustering by Airline stock prices (2017-2022) [KLAR]</h3>
         <div class="frame">
             <pi><img src="project_clustering_stocks.png" alt="Cluster_pic" width="400" height="350"></pi>
         </div>
             
-            <descr>The dendrogram displays clusters of stock prices between 2017 and 2022 for eight airlines: Wizzair, Ryanair, TUI, Scandinavian Airlines, Lufthansa, Norwegian Air Shuttle, EasyJet and AirFrance-KLM. When clustering stock data for the eight airlines, I use the dynamic time warping technique to better capture similarities in trends.</descr>
+            <descr>Using unsupervised machine learning, the dendrogram displays clusters of stock prices between for Wizzair, Ryanair, TUI, Scandinavian Airlines (SAS), Lufthansa, Norwegian Air Shuttle, EasyJet and AirFrance-KLM. I used Python to retrieve stock data from Yahoo Finance to then cluster the data into groups. For this, I use loops before standardizing the data into comparable trends. At the end, I apply the Dynamic Time Warping technique, which accounts for temporal lags to better capture similarities in trends.</descr>
 
-            <descr><br><br>The two low-cost carriers, Wizzair and Ryanair, are the most distinguishable set of airlines, as seen in the length of the upper purple branch. All the other carriers are grouped into the lower purple branch, where national flag carrier AirFrance-KLM and low-cost carrier EasyJet interestingly share more similarities in trends relative to the other airlines. The grouping of the remianing airlines are nonetheless somewhat more consistent. Neither TUI nor SAS are low-cost carriers, and these seem to ge grouped with national flag carrier Lufthansa. Evidently, the separated airline here is Norwegian Air Shuttle, a low-cost carrier. The clustering of airline types is thus not entirely clear.</descr>
-            <descr><descr class="rubric-launch"><br><br>Link to Colab code, <a class="textLink" href=" https://colab.research.google.com/drive/1sBqlAFsNlLzLeA9QBEg0am_0uH5mzv0n#scrollTo=sH8fs50ur98g"> here</a>.</descr></descr>
+            <descr><br><br>The two low-cost carriers, Wizzair and Ryanair, are the most distinguishable set of airlines, as seen in the length of the upper purple branch. All the other carriers are grouped into the lower purple branch, where national flag carrier AirFrance-KLM and low-cost carrier EasyJet seemingly share more similarities in trends relative to the other airlines. The remaining clusters are somewhat inconsistent, as well.</descr>
+            <descr><descr class="rubric-launch"><br><br>Link to Colab code, <a class="textLink" href="https://colab.research.google.com/drive/1sBqlAFsNlLzLeA9QBEg0am_0uH5mzv0n?usp=sharing"> here</a>.</descr></descr>
 
             <h3>Conclusion</h3>
-            <descr>Future researchers may want to scrape data on ticket fares from a range of airlines to compare price volatility over time across airline types and to perform clustering. </descr>
+            <descr>In brief, it appears that LCCs are rising in popularity and have played a great role in maintaining connectivity in Europe during the pandemic between 2020 and 2021.
+                The data further indicates that LCCs received significantly less publicly funded bailouts issued during the COVID-19 outbreak compared to its national flag or full-service carrier competitors, although LCCs generally serving a greater number of passengers. Despite the adverse consequences of the pandemic, coupled with governments' greater state aid packages for non-LCCs, LCCs appear to remain competitive.<br><br>Future researchers may want to scrape data on ticket fares from a range of airlines to compare price volatility over time across airline types and to perform clustering. </descr>
+
+            <h3>References</h3>
+            <descr>Burgueño Salas, E. (2022) Government aid to airlines in Europe covid-19, Statista. Available at: https://www.statista.com/statistics/1189278/government-aid-airline-europe-covid/ (Accessed: December 2, 2022). 
+
+                <br><br> Walther, B. (2022) The world's 50 Biggest Airlines by Fleet Size (after Corona), Information Design. Available at: https://www.id1.de/2021/05/26/the-worlds-50-biggest-airlines-by-fleet-size-after-corona/ (Accessed: December 30, 2022). 
+              
+                <br><br>Wikipedia. List of largest airlines in Europe (2022). Wikimedia Foundation. Available at: https://en.wikipedia.org/wiki/List_of_largest_airlines_in_Europe (Accessed: December 2, 2022). 
+                
+                <br><br>World Bank Data. Air Transport, passengers carried (2021). Available at: https://data.worldbank.org/indicator/IS.AIR.PSGR?end=2020&start=1973 (Accessed: December 2, 2022). 
+                
+                <br><br>Yahoo! Finance. Air France-KLM SA (AF.PA) stock price, news, Quote & History (2022). Yahoo! Available at: https://finance.yahoo.com/quote/AF.PA?p=AF.PA&.tsrc=fin-srch (Accessed: December 27, 2022). 
+                
+                <br><br>Yahoo! Finance. Deutsche Lufthansa AG (lha.de) stock price, news, Quote & History (2022). Yahoo! Available at: https://finance.yahoo.com/quote/LHA.DE?p=LHA.DE&.tsrc=fin-srch (Accessed: December 27, 2022). 
+                
+                <br><br>Yahoo! Finance. EasyJet plc (EZJ.L) stock price, news, Quote & History (2022) Yahoo! Available at: https://finance.yahoo.com/quote/EZJ.L?p=EZJ.L&.tsrc=fin-srch (Accessed: December 27, 2022). 
+                
+                <br><br>Yahoo! Finance. Norwegian Air Shuttle ASA (NAS.OL) stock price, news, Quote & History (2022). Yahoo! Available at: https://finance.yahoo.com/quote/NAS.OL?p=NAS.OL&.tsrc=fin-srch (Accessed: December 27, 2022). 
+                
+                <br><br>Yahoo! Finance. Ryanair Holdings plc (RYAAY) stock price, news, Quote & History (2022). Yahoo! Available at: https://finance.yahoo.com/quote/RYAAY?p=RYAAY&.tsrc=fin-srch (Accessed: December 27, 2022). 
+                
+                <br><br>Yahoo! Finance. Sas Ab (publ) (SAS.ST) stock price, news, Quote & History (2022). Yahoo! Available at: https://finance.yahoo.com/quote/SAS.ST?p=SAS.ST&.tsrc=fin-srch (Accessed: December 27, 2022). 
+                
+                <br><br>Yahoo! Finance. Tui Ag (TUI.L) stock price, news, Quote & History (2022). Yahoo! Available at: https://finance.yahoo.com/quote/TUI.L?p=TUI.L&.tsrc=fin-srch (Accessed: December 27, 2022). 
+                
+                <br><br>Yahoo! Finance. Wizz Air Holdings plc (WIZZ.L) stock price, news, Quote & History (2022). Yahoo! Available at: https://finance.yahoo.com/quote/WIZZ.L?p=WIZZ.L&.tsrc=fin-srch (Accessed: December 27, 2022). </descr>
 
              
          </div>
@@ -111,6 +149,7 @@
     var myChart20 = "wk8.chart1.json"
     var myChart21 = "wk8.graph2.json"
     var myChart22 = "project.scatter.json"
+    var myChart200 = "project.FLEET.viz.json"
     var myChart2000 = "project_BAR_CHART_viz.json"
     var myChart2400 = "project_viz_map.json" //project
 
@@ -137,6 +176,7 @@
     vegaEmbed('#Chart20', myChart20);
     vegaEmbed('#Chart21', myChart21);
     vegaEmbed('#Chart22', myChart22); //wk9
+    vegaEmbed('#Chart200', myChart200);
     vegaEmbed('#Chart2000', myChart2000);
     vegaEmbed('#Chart2400', myChart2400); //project
 </script>
