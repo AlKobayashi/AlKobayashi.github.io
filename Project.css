@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@200&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@200&family=Open+Sans&family=Poppins&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -29,6 +31,7 @@
 
  .navbar AK{ /*Alicja Kobayashi */
    margin-top: 5%;
+   font-family: 'Poppins', sans-serif;
    color: #fff;
    font-size: 30;
    font-weight: bold 100;
@@ -46,8 +49,9 @@
  }
  .navbar ul li a {
     text-decoration: none;
+    font-size: 20px;
+    font-family: 'Hanken Grotesk', sans-serif;
     color: #fff;
-    text-transform: uppercase; /*remove this to have lower-case */
  }
  .navbar ul li::after{
     content:'';
@@ -74,7 +78,7 @@
 .content h1{ /* Data Science Project */
    font-size: 30px;
    font-weight: normal;
-   margin-top: 80px;
+   margin-top: 40px;
    text-align: center;
 }
 
