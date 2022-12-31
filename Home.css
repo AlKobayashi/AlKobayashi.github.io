@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@200&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@200&family=Open+Sans&family=Poppins&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -6,7 +8,7 @@
  .banner{
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),url(DSC_0838.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),url(DSC_0838.jpg);
     background-size: cover;
     background-position: center;
  }
@@ -25,10 +27,11 @@
     margin-top: 3%; /*this bit is jut extra */
  }
 
- .navbar AK{
+ .navbar AK{ /*Alicja Kobayashi in the header */
    margin-top: 5%;
+   font-family: 'Poppins', sans-serif;/* font-family: 'Hanken Grotesk', sans-serif; */
    color: #fff;
-   font-size: 30;
+   font-size: 25;
    font-weight: bold 100;
    list-style: none;
    display: inline-block;
@@ -39,13 +42,15 @@
  .navbar ul li{ /* navigation bar*/ 
     list-style: none;
     display: inline-block;
-    margin: 0 20px;  
+    margin: 0 17px;  
     position: relative;
  }
- .navbar ul li a {
+ .navbar ul li a { /*NAVIGTION BAR*/
     text-decoration: none;
+    font-size: 20px;
+    font-family: 'Hanken Grotesk', sans-serif;
     color: #fff;
-    text-transform: uppercase; /*remove this to have lower-case */
+    text-transform: uppercasse; /*remove this to have lower-case */
  }
  .navbar ul li::after{
     content:'';
@@ -73,10 +78,12 @@
  }
  .content h1{ /* Data Science */
     font-size: 40px;
+    font-family: 'Hanken Grotesk', sans-serif; /* 'Poppins', sans-serif; */
     margin-top: 80px;
  }
  .content p{ /* Welcome to my website! */
     margin: 20px auto;
+    font-family: 'Hanken Grotesk', sans-serif;
     font-weight: 100;
     font-size: 20px;
     line-height: 25px;
