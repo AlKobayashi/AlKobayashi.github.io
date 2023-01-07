@@ -8,7 +8,7 @@
       "anchor": "start",
       "color": "black"},
   
-  "data":{"url": "https://raw.githubusercontent.com/AlKobayashi/AlKobayashi.github.io/main/data_IMF_creditOutstanding_GDP.csv"},
+  "data":{"url": "https://raw.githubusercontent.com/AlKobayashi/AlKobayashi.github.io/main/wk2.IMF.csv"},
   
   "height": 270,
   "width": 270,
@@ -19,7 +19,7 @@
 
 "encoding": {
      "x": {
-       "field": "Year",
+       "field": "Datum",
        "type": "temporal",
        "axis": {
          "title": null,
@@ -28,7 +28,7 @@
          "labelAngle": 45}},
 
       "y": {
-        "field": "Credit_to_GDP_(%)",
+        "field": "Debt_to_GDP(%)",
         "type": "quantitative",
         "title": "",
         "axis": {"grid": false}}
