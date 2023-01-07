@@ -7,8 +7,8 @@
  }
  .banner{
     width: 100%;
-    height: 100px;
-    background-image: linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)),url(DSC_0937.jpg);
+    height: 110px;
+    background-image: linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)),url(portfolio1.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
