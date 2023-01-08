@@ -51,12 +51,12 @@
                 </tr>
               </table> 
 
-            <descr><br>The data for these charts were scraped on Wikipedia, using Python. The charts indicate a growing demand for low-cost carriers, with Ryainair taking the lead in passenger count in 2019 surpassing the airline giant Lufthansa Group. Notably, Ryanair has maintained a considerably greater margin throughout the pandemic, even though the passenger numbers somewhat evened out across carriers during 2020 and 2021.</descr>
+            <descr><br>The data for these charts were scraped from Wikipedia, using Python. The charts indicate a growing demand for low-cost carriers, with Ryanair taking the lead in passenger count in 2019 surpassing the airline giant Lufthansa Group. Notably, Ryanair has maintained a considerably greater margin throughout the pandemic, even though the passenger numbers somewhat evened out across carriers during 2020 and 2021.</descr>
             <descr><br><br>Initially, the data in the bar chart was incorrectly sorted for airlines whose data was missing for at least one year. While missing observations coded as "NaN" were interpreted as 0, missing observations coded as "-" somehow broke the sorting in Vega Lite. I thus recoded all "-" as "NaN" and then recoded all "NaN" as "0". This fixed the sorting issue in Vega Lite. However, once the graph was saved as a json-file in VC Studio, the sorting was wrong when displayed on the website, despite using the new dataset. By looking at each individual code and by deleting the color commands, I finally realised that the sorting also depends on the color encoding command. In my Python notebook I then added a "Category" variable to refer to this in the color encoding, which solved the sorting issue. </descr>
 
             <descr><descr class="rubric-launch"><br><br>Link to Colab code, <a class="textLink" href="https://colab.research.google.com/drive/1rSh9_YST4Meqte2yxNAYu-3AvOiVsIE0?usp=sharing"> here</a>.</descr></descr>
         
-            <h3>Fleet size</h3>
+            <h3>Post-Covid fleet size (2021)</h3>
             <div class="chart" id="Chart200"></div>
             <descr><br>This chart shows Europe's 13 largest airlines by fleet size. 
                 <br><br>The data was scraped from InformationDesign, using Python. The scraper identified five tables, which I appended into a single dataframe. Five airlines ended up sharing the same index number so I added the command "ignore_index=True" that prevents the stacking of index numbers but rather gives the appended datasets unique index numbers. </descr>
