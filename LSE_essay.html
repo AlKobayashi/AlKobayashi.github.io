@@ -15,48 +15,56 @@
      <title>Website</title>
      <link rel="stylesheet" href="LSE_essay.css">
  
-      <!--The next three lines allow the Vega embed-->
-     <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
-     <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
-     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
- </head>
- 
- 
- <body>
-     <div class="banner">
-         <div class="navbar">
-             <AK>Alicja Kobayashi</AK>
-             <ul>
-                 <li><a href="Home.html">Home</a></li>
-                 <li><a href="Portfolio.html">Portfolio</a></li>
-                 <li><a href="Project.html">Project</a></li>
-                 <li><a href="LSE_essay.html">LSE</a></li>
-                 <li><a href="About.html">About</a></li>
-             </ul>
-         </div>
- 
-         <div class="content">
-             <h1 class="anim">EC421: International Macroeconomics</h1>
-             <descr class="anim"></descr>
- 
-             <div class="Chart32" id="Chart32"></div>
-             <descr><br>Write here.</descr>
-             <descr> <br><br>Python code for high-freq currency data: <a class="textLink" href="https://colab.research.google.com/drive/1oAB8tCVh-tCyq5m1M5NO0klbkHTN9B00?usp=sharing"> here</a>.</descr>
-             
-             
-         </div>
-     </div>
- 
- </body>
+     <!--The next three lines allow the Vega embed. NOTICE THE LAST THREE WERE ADDED RECENTLY-->
+    <script src="https://cdn.jsdelivr.net/npm/vega@.5.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
 
- <script>
+
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <AK>Alicja Kobayashi</AK>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Portfolio.html">Portfolio</a></li>
+                <li><a href="Project.html">Project</a></li>
+                <li><a href="LSE_essay.html">LSE</a></li>
+                <li><a href="About.html">About</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <h1 class="anim">EC421: International Macroeconomics</h1>
+        
+
+            <!--<h2>Graph title</h2> !-->
+            
+            <br><br><table>
+            <tr>
+              <td><div class="chartwk32" id="Chart32"></div></td>
+            </tr>
+        </table>  
+            <descr><br> Python code to exchange rate data for 1 minute interval <a class="textLink" href="https://colab.research.google.com/drive/1oAB8tCVh-tCyq5m1M5NO0klbkHTN9B00?usp=sharing"> here</a>. </descr>
+
+            
+
+            
+        </div>
+    </div>
+
+</body>
+
+<script>
     //Define charts:
-    
-    var myChart32 = "EURUSD_HIGHFREQ.json"
+    var myChart32 = "EURUSD_HIGHFREQ.json";
 
     // Embed charts:
-    
     vegaEmbed('#Chart32', myChart32);
 </script>
- 
- </html>
+
+</html>
