@@ -1,0 +1,115 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+      "text": "EUR/USD Spot Exchange Rate 2019-2014",
+      "subtitle": "Source: Yahoo Finance (2024)",
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 10,
+      "anchor": "start",
+      "color": "black"
+    },
+    "data": {
+      "url": "https://raw.githubusercontent.com/AlKobayashi/AlKobayashi.github.io/main/pset2HIGHFREQ-2.csv"
+    },
+    "width": 300,
+    "height": 300,
+    "layer": [
+      {
+        "encoding": {
+          "x": {
+            "field": "Datetime",
+            "type": "temporal",
+            "axis": {"grid": false, "title": null, "format": "%Y-%m-%d"}
+          },
+          "y": {
+            "field": "EUR=X",
+            "title": "EUR/USD",
+            "type": "quantitative",
+            "scale": {"domain": [0.926, 0.933]}
+          }
+        },
+        "layer": [
+          {"mark": {"type": "line", "color": "#002fa7", "strokeWidth": 1}},
+          {
+            "params": [
+              {
+                "name": "label",
+                "select": {
+                  "type": "point",
+                  "encodings": ["x"],
+                  "nearest": true,
+                  "on": "mouseover"
+                }
+              }
+            ],
+            "mark": {
+              "type": "point",
+              "fill": "red",
+              "stroke": "transparent",
+              "size": 70
+            },
+            "encoding": {
+              "opacity": {
+                "condition": {"param": "label", "empty": false, "value": 1},
+                "value": 0
+              },
+              "tooltip": [
+                {
+                  "field": "Datetime",
+                  "type": "temporal",
+                  "title": "Date",
+                  "format": "%Y-%m-%d %H:%M"
+                },
+                {
+                  "field": "EUR=X",
+                  "type": "quantitative",
+                  "title": "EUR/USD",
+                  "format": ".3f"
+                }  
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "transform": [{"filter": {"param": "label", "empty": false}}],
+        "layer": [
+          {
+            "mark": {"type": "rule", "color": "gray"},
+            "encoding": {"x": {"type": "temporal", "field": "Datetime"}}
+          },
+          {
+            "encoding": {
+              "tooltip": [
+                {
+                  "field": "Datetime",
+                  "type": "temporal",
+                  "title": "Date",
+                  "format": "%Y-%m-%d %H:%M:%S"
+                },
+                {
+                  "field": "EUR=X",
+                  "type": "quantitative",
+                  "title": "EUR/USD",
+                  "format": ".3f"
+                }
+              ]
+            },
+            "layer": [
+              {
+                "mark": {
+                  "type": "text",
+                  "stroke": "white",
+                  "strokeWidth": 2,
+                  "align": "left",
+                  "dx": 5,
+                  "dy": -5
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  
