@@ -1,17 +1,18 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title": {
-      "text": "EUR/USD Spot Exchange Rate 2019-2014",
+      "text": "EUR/USD Spot Exchange Rate Feb 5th-9th 2024",
       "subtitle": "Source: Yahoo Finance (2024)",
       "subtitleFontStyle": "italic",
       "subtitleFontSize": 10,
       "anchor": "start",
-      "color": "black"
+      "color": "black",
+      "fontSize": 14
     },
     "data": {
       "url": "https://raw.githubusercontent.com/AlKobayashi/AlKobayashi.github.io/main/pset2HIGHFREQ-2.csv"
     },
-    "width": 300,
+    "width": 600,
     "height": 300,
     "layer": [
       {
@@ -64,8 +65,8 @@
                   "field": "EUR=X",
                   "type": "quantitative",
                   "title": "EUR/USD",
-                  "format": ".3f"
-                }  
+                  "format": ".3f"  
+                }
               ]
             }
           }
@@ -91,7 +92,7 @@
                   "field": "EUR=X",
                   "type": "quantitative",
                   "title": "EUR/USD",
-                  "format": ".3f"
+                  "format": ".3f"  
                 }
               ]
             },
