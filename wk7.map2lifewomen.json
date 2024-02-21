@@ -1,57 +1,62 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "description": "",
-    "title": {
-      "text": "Life expectancy among women in Europe (2019)",
-      "subtitle": [
-        "Data source: World Bank Data",
-        ""
-      ],
-      "subtitleFontStyle": "italic",
-      "subtitleFontSize": 10,
-      "anchor": "start",
-      "color": "black"
-    },
-    "width": 300,
-    "height": 280,
-    
-    "data": {
-      "url": "https://raw.githubusercontent.com/deldersveld/topojson/master/continents/europe.json",
-      "format": {
-        "type": "topojson", 
-        "feature": "continent_Europe_subunits"}
-    },
-    "transform": [
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 300,
+  "height": 300,
+  "title": {
+    "text": "Global Labour Force Participation Rates 2021",
+    "subtitle": [
+      "Labour force participation rates by country and gender.",
+      "Source: The World Bank (2022)"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/mayawesthorp/mayawesthorp.github.io/main/geoworld.json",
+    "format": {"property": "features"}
+  },
+  "projection": {"type": "naturalEarth1"},
+  "transform": [
+    {
+      "lookup": "properties.name",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/mayawesthorp/mayawesthorp.github.io/main/homework6_participation.csv"
+        },
+        "key": "Country Name",
+        "fields": [
+          "Labour force participation rate",
+          "Female labour force participation rate",
+          "Male labour force participation rate"
+        ]
+      }
+    }
+  ],
+  "mark": {"type": "geoshape", "stroke": "black", "strokeWidth": 0.5},
+  "encoding": {
+    "tooltip": [
+      {"field": "properties.name", "type": "nominal", "title": "Country"},
+      {"field": "Labour force participation rate"},
       {
-        "lookup": "properties.geounit",
-        "from": {
-          "data": {
-            "url": "https://raw.githubusercontent.com/AlKobayashi/AlKobayashi.github.io/main/wk7lifeexpectancyNY.csv"
-          },
-          "key": "Country Name",
-          "fields": ["Life_Expectancy"]
-        }
+        "field": "Female labour force participation rate",
+        "title": "Female participation rate"
+      },
+      {
+        "field": "Male labour force participation rate",
+        "title": "Male participation rate"
       }
     ],
-    "projection": {
-      "type": "equalEarth"},
-  
-    "mark": "geoshape",
-    "encoding": {
-      "color": {
-        "field": "Life_Expectancy",
-        "title": "Years",
-        "type": "quantitative",
-        "scale": {"scheme": "cividis"}
-      },
-      "tooltip": [
-        {"field": "properties.geounit", "type": "nominal", "title": "Country"},
-        {
-          "field": "Life_Expectancy",
-          "type": "quantitative",
-          "title": "Average life expectancy",
-          "format": ".2f"
-        }
-      ]
+    "color": {
+      "field": "Labour force participation rate",
+      "type": "quantitative",
+      "scale": {"scheme": "lighttealblue"},
+      "legend": {
+        "title": "Labour Force Participation Rate",
+        "orient": "right",
+        "direction": "vertical"
+      }
     }
   }
+}
