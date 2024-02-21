@@ -3,10 +3,11 @@
   "width": 300,
   "height": 250,
   "title": {
-    "text": "World Map", 
+    "text": "World Map", "subtitle": [""],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
     "anchor": "start", 
     "color": "black"},
-  
   "data": {
     "url": "https://raw.githubusercontent.com/mayawesthorp/mayawesthorp.github.io/main/geoworld.json",
     "format": {"property": "features"}
@@ -14,7 +15,7 @@
   "projection": {"type": "naturalEarth1"},
   "mark": {
     "type": "geoshape",
-    "fill": "skyblue",
+    "fill": "lightblue",
     "stroke": "black",
     "strokeWidth": 0.4
   },
