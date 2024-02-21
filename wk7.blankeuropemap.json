@@ -1,37 +1,22 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    
-      "title": {
-      "text": "Map of Europe",
-      "subtitleFontStyle": "italic",
-      "subtitleFontSize": 12,
-      "anchor": "start",
-      "color": "black"
-    },
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 300,
+  "height": 300,
+  "title": {
+    "text": "World Map", 
+    "anchor": "start", 
+    "color": "black"},
   
-  
-    "width":300,
-    "height":300,
-  
-    "data":{
-      "url": "https://raw.githubusercontent.com/deldersveld/topojson/master/continents/europe.json",
-      "format":{
-        "type": "topojson",
-        "feature": "continent_Europe_subunits"
-      }},
-  
-      "projection": {
-        "type": "equalEarth"
-      },
-  
-     "mark": "geoshape",
-  
-      "encoding": {
-        "tooltip":{
-          "field": "properties.geounit", "type": "nominal", "title": "Country"}
-        
-      }
-  
-  
-  
-   }
+  "data": {
+    "url": "https://raw.githubusercontent.com/mayawesthorp/mayawesthorp.github.io/main/geoworld.json",
+    "format": {"property": "features"}
+  },
+  "projection": {"type": "naturalEarth1"},
+  "mark": {
+    "type": "geoshape",
+    "fill": "skyblue",
+    "stroke": "black",
+    "strokeWidth": 0.4
+  },
+  "encoding": {"tooltip": {"field": "properties.name", "type": "nominal"}}
+}
