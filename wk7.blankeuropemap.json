@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 300,
+  "width": 330,
   "height": 250,
   "title": {
     "text": "World Map", "subtitle": [""],
