@@ -5,7 +5,6 @@
   "title": {
     "text": "Global Labour Force Participation Rates 2021",
     "subtitle": [
-      "Labour force participation rates by country and gender.",
       "Source: The World Bank (2022)"
     ],
     "subtitleFontStyle": "italic",
@@ -53,7 +52,7 @@
       "type": "quantitative",
       "scale": {"scheme": "lighttealblue"},
       "legend": {
-        "title": "Labour Force Participation Rate",
+        "title": "Participation Rate",
         "orient": "right",
         "direction": "vertical"
       }
