@@ -9,7 +9,7 @@ delta = 0.05; sigma = 0.1;    % decay rate/volatility
 phi = 10; alpha = 0.5;        % adjustment cost/equity constraint
           
 N = 501;                          % grid size
-eta = linspace(0.0001,0.999,N)';  % grid for \eta
+eta = linspace(0.0001,0.999,N)';  % grid for \eta. eta is between 0 and 1.
 
 %% Solution
 % Solve for q(0)
