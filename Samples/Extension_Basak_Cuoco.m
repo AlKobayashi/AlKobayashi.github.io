@@ -12,7 +12,7 @@ N = 501;                          % grid size
 eta = linspace(0.0001,0.999,N)';  % grid for \eta. eta is between 0 and 1.
 
 %% Solution
-% Solve for q(0)
+% Solve for q(0), which is when eta is 0.
 q0 = (1 + a_h*phi)/(1 + rho_h*phi);
 
 %% Inner loop
