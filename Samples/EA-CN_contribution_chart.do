@@ -16,11 +16,11 @@ clear all
 
 set more off
 
-global raw_data_trade "P:\ECB business areas\DGE\DED\Monitoring and Analysis\07. Trade (EES)\Trade assessment\TDM\Clean TDM values"
+global raw_data_trade "P:\Path\TDM\Clean TDM values"
 
-global path "P:\ECB business areas\DGE\DED\Monitoring and Analysis\07. Trade (EES)\Trade assessment\GovC\07-2025\EA import from CN by categ\Cleaned dta"
+global path "P:\Path\07-2025\EA import from CN by categ\Cleaned dta"
 
-global conversion "\\gimecb01\Data\ECB business areas\DGE\DED\Monitoring and Analysis\07. Trade (EES)\Conversion"
+global conversion "P:\Path\Conversion"
 
 cd "$path"
 
@@ -231,4 +231,4 @@ rename value_tot_growth Total
 
 
 * SAVE IN EXCEL
-export excel using "P:\ECB business areas\DGE\DED\Monitoring and Analysis\07. Trade (EES)\Trade assessment\GovC\07-2025\EA import from CN by categ\Chart\EA_I_CHN_BEC5.xlsx", sheet("Data from stata 3mma") sheetmodify firstrow(variables)
+export excel using "P:\path\EA_I_CHN_BEC5.xlsx", sheet("Data from stata 3mma") sheetmodify firstrow(variables)
