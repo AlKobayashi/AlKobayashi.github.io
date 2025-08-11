@@ -1,0 +1,71 @@
+clear; clc; close all;
+options = optimset('display','off');
+
+
+%% Calibration
+p        = 1;
+tau_new  = 0.1; % tariff at 10%.
+beta     = 0.99; % Hh discount factor.
+R        = 1/beta; % Equilibrium condition obtained from Euler eq.
+epsi     = 6; % Elasticity of subs. varieties
+psi      = 1; % Frisch elasticity parameter.
+gamma    = 2; % elasticity of sub. between Home and Foreign goods. Just empirical.
+sigma    = 2; % intertemporal elasticity of substitution.
+Upsilon  = 1; % inflation cost. s the fraction of price adjustment costs that constitute DWL, while 1−Υ is the portion rebated to Hh. Benchmark in NK: 1.
+
+elasX    = 10;
+
+NT_y     = 5; %tradeable GDP
+target_m = 0.155 *NT_y; % target imports
+slopePC  = 0.0055; %obtained by setting  price adjustment cost to 1636.
+vxphi    = (1/sigma+psi)*epsi/slopePC;
+
+
+% Implied theta
+fun = @(theta) epsi*theta/((1-theta)*(1-beta*theta)) - vxphi;
+theta = fsolve(fun,0.75,options);
+slope_phillips = epsi/vxphi*(1/sigma+psi);
+duration_sticky = 1/(1-theta);
+
+
+b0       = 0; % Central Bank's intertemp. budget constraint. 0 in st.st.
+tau_zero = 0;
+T        = 50; % periods
+betavec  = beta.^(0:1:T-1)';
+
+
+% permanent
+disp('Permanent ')
+tauvec   = tau_new*ones(T,1);
+tau = tauvec;
+run baseline.m
+
+figure(1)
+title('Permanent')
+plot_sub_base(opt,zero,eff,T)
+
+
+ 
+% temporary
+disp('Temporary ')
+rhos   = 0.9756;
+tauvec = rhos.^(0:1:T-1)' .* tau_new;
+tau = tauvec;
+run baseline.m
+
+figure(2)
+title('Temporary ')
+plot_sub_base(opt,zero,eff,T)
+
+
+% anticipated
+disp('Anticipated ')
+T0     = 4; 
+tauvec = [0*ones(T0,1);tau_new*ones(T-T0,1)];
+tau = tauvec;
+run baseline.m
+
+figure(3)
+title('Anticipated ')
+plot_sub_base(opt,zero,eff,T)
+
